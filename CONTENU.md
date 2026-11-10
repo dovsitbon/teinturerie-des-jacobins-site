@@ -1,112 +1,126 @@
-# Cordonnerie Henriville : contenu du site
+# Teinturerie des Jacobins : contenu du site
 
-Tous les textes du site, en français et en anglais, pour relecture avec l'atelier. Les corrections se font dans `locales/fr.json` et `locales/en.json` ; tarifs, délais, horaires, annonces, photos et avant / après dans `data/*.json`. Ce fichier se régénère avec `npm run contenu`.
+Tous les textes du site, en français et en anglais, pour relecture avec le pressing. Les corrections se font dans `locales/fr.json` et `locales/en.json` ; tarifs, délais, horaires, annonces, photos et avis dans `data/*.json`. Ce fichier se régénère avec `npm run contenu`.
 
-Rien n'a été inventé côté chiffres : **aucun prix n'est renseigné** (affiché « sur devis ») tant que l'atelier ne les a pas donnés. Les délais sont des ordres de grandeur **à valider**. La note Google (4.8/5, 188 avis) est celle relevée le 2026-11-05. Les avis ne sont pas cités : le site reprend seulement leurs thèmes (prix honnêtes, vrai travail d'artisan).
+Rien n'a été inventé côté chiffres : **aucun prix n'est renseigné** (affiché « sur demande ») tant que le pressing ne les a pas donnés. Les délais sont des ordres de grandeur **à valider**, les horaires (du lundi au samedi, 9 h – 19 h) **à confirmer**. La note Google (3.4/5, 37 avis) est celle relevée le 2026-11-10. **Aucun avis n'est cité ni inventé** : la section Avis attend de vrais avis dans `data/avis.json` (avec l'accord de leurs auteurs).
 
-Voir aussi : [INFOS-A-DEMANDER.md](INFOS-A-DEMANDER.md) et [assets/A-PHOTOGRAPHIER.md](assets/A-PHOTOGRAPHIER.md).
+## Titre du hero : trois propositions
+
+1. **Vos vêtements entre de bonnes mains** (retenu) / *Your clothes in good hands*
+2. Le pressing du centre-ville / *The city-centre dry cleaner*
+3. Propre, net, à l'heure / *Clean, crisp, on time*
+
+Pour changer : `hero.title` dans `locales/fr.json` et `locales/en.json`.
+
+Voir aussi : [INFOS-A-DEMANDER.md](INFOS-A-DEMANDER.md) et [assets/A-PHOTOGRAPHIER.md](assets/A-PHOTOGRAPHIER.md). Affichette A5 : `public/affichette-teinturerie-des-jacobins-a5.pdf` (`npm run affichette`).
 
 ## Tarifs et délais (`data/tarifs.json`)
 
-### Talons & semelles / Heels & soles
+### Chemises & hauts / Shirts & tops
 
 | Prestation | Délai indicatif | Prix « à partir de » |
 |---|---|---|
-| **Pose de patins**<br>*Sole protectors fitted* | Dans la journée (à valider) | à remplir |
-| **Embouts de talons, femme**<br>*Women's heel tips* | Pendant que vous attendez (à valider) | à remplir |
-| **Talons, homme**<br>*Men's heels* | Dans la journée (à valider) | à remplir |
-| **Ressemelage gomme**<br>*Rubber resoling* | Quelques jours (à valider) | à remplir |
-| **Ressemelage cuir**<br>*Leather resoling* | Environ une semaine (à valider) | à remplir |
+| **Chemise, lavée et repassée**<br>*Shirt, washed and pressed* | 24 à 48 h (à valider) | **à remplir** |
+| **Chemise, rendue pliée**<br>*Shirt, returned folded* | 24 à 48 h (à valider) | **à remplir** |
+| **Chemisier, blouse**<br>*Blouse* | 48 h (à valider) | **à remplir** |
+| **Pull, gilet**<br>*Jumper, cardigan* | 48 h (à valider) | **à remplir** |
 
-### Couture & cuir / Stitching & leather
-
-| Prestation | Délai indicatif | Prix « à partir de » |
-|---|---|---|
-| **Couture, recollage**<br>*Stitching, re-gluing* | Dans la journée (à valider) | à remplir |
-| **Fermeture éclair de bottes**<br>*Boot zip replacement* | Quelques jours (à valider) | à remplir |
-| **Teinture, rénovation du cuir**<br>*Dyeing, leather restoration* | Quelques jours (à valider) | à remplir |
-| **Entretien, cirage, glaçage**<br>*Care, polishing, mirror shine* | Dans la journée (à valider) | à remplir |
-| **Mise en forme, élargissement**<br>*Stretching, reshaping* | 24 à 48 h (à valider) | à remplir |
-
-### Sacs & maroquinerie / Bags & leather goods
+### Costumes / Suits
 
 | Prestation | Délai indicatif | Prix « à partir de » |
 |---|---|---|
-| **Couture de sac**<br>*Bag stitching* | Quelques jours (à valider) | à remplir |
-| **Fermeture éclair de sac ou de blouson**<br>*Bag or jacket zip* | Quelques jours (à valider) | à remplir |
-| **Anses, poignées, bandoulière**<br>*Handles, straps* | Quelques jours (à valider) | à remplir |
-| **Ceinture : raccourcir, percer, boucle**<br>*Belt: shorten, punch holes, buckle* | Pendant que vous attendez (à valider) | à remplir |
+| **Costume deux pièces**<br>*Two-piece suit* | 48 à 72 h (à valider) | **à remplir** |
+| **Costume trois pièces**<br>*Three-piece suit* | 48 à 72 h (à valider) | **à remplir** |
+| **Veste, blazer**<br>*Jacket, blazer* | 48 h (à valider) | **à remplir** |
+| **Pantalon**<br>*Trousers* | 48 h (à valider) | **à remplir** |
+| **Cravate**<br>*Tie* | 48 h (à valider) | **à remplir** |
 
-### Clés & badges / Keys & fobs
-
-| Prestation | Délai indicatif | Prix « à partir de » |
-|---|---|---|
-| **Clé plate (maison, cave, boîte aux lettres)**<br>*Standard flat key (home, cellar, letterbox)* | Pendant que vous attendez (à valider) | à remplir |
-| **Clé de sécurité, sur carte de propriété**<br>*High-security key, with owner's card* | Selon la marque (à valider) | à remplir |
-| **Clé de voiture**<br>*Car key* | Selon le modèle (à valider) | à remplir |
-| **Badge d'immeuble**<br>*Building fob* | Pendant que vous attendez (à valider) | à remplir |
-
-### Serrurerie / Locksmithing
+### Manteaux / Coats
 
 | Prestation | Délai indicatif | Prix « à partir de » |
 |---|---|---|
-| **Cylindre, barillet : fourniture**<br>*Lock cylinder: supply* | à remplir | à remplir · **prestation à confirmer** |
-| **Serrure de boîte aux lettres**<br>*Letterbox lock* | à remplir | à remplir · **prestation à confirmer** |
+| **Manteau, caban**<br>*Coat, pea coat* | 3 à 4 jours (à valider) | **à remplir** |
+| **Manteau long, laine ou cachemire**<br>*Long coat, wool or cashmere* | 3 à 4 jours (à valider) | **à remplir** |
+| **Doudoune**<br>*Down jacket* | 4 à 5 jours (à valider) | **à remplir** |
+| **Imperméable, trench**<br>*Raincoat, trench coat* | 3 à 4 jours (à valider) | **à remplir** |
 
-### Petits services / Small jobs
+### Robes & robes de mariée / Dresses & wedding dresses
 
 | Prestation | Délai indicatif | Prix « à partir de » |
 |---|---|---|
-| **Pile de montre**<br>*Watch battery* | Pendant que vous attendez (à valider) | à remplir |
-| **Gravure, plaques (boîte aux lettres, interphone)**<br>*Engraving, name plates (letterbox, intercom)* | Dans la journée (à valider) | à remplir |
-| **Produits d'entretien, lacets, semelles intérieures**<br>*Care products, laces, insoles* | En boutique (à valider) | à remplir |
+| **Robe simple**<br>*Day dress* | 48 à 72 h (à valider) | **à remplir** |
+| **Robe de soirée, robe longue**<br>*Evening or long dress* | 3 à 5 jours (à valider) | **à remplir** |
+| **Jupe**<br>*Skirt* | 48 h (à valider) | **à remplir** |
+| **Robe de mariée**<br>*Wedding dress* | 1 à 2 semaines, sur devis (à valider) | **à remplir** |
+
+### Cuir & daim / Leather & suede
+
+| Prestation | Délai indicatif | Prix « à partir de » |
+|---|---|---|
+| **Veste ou blouson en cuir**<br>*Leather jacket* | à remplir | **à remplir** · **prestation à confirmer** |
+| **Pièce en daim, nubuck**<br>*Suede or nubuck piece* | à remplir | **à remplir** · **prestation à confirmer** |
+| **Manteau en cuir, peau lainée**<br>*Leather or sheepskin coat* | à remplir | **à remplir** · **prestation à confirmer** |
+
+### Linge de maison & couettes / Household linen & duvets
+
+| Prestation | Délai indicatif | Prix « à partir de » |
+|---|---|---|
+| **Couette une personne**<br>*Single duvet* | 3 à 5 jours (à valider) | **à remplir** |
+| **Couette deux personnes**<br>*Double duvet* | 3 à 5 jours (à valider) | **à remplir** |
+| **Couverture, plaid**<br>*Blanket, throw* | 3 à 5 jours (à valider) | **à remplir** |
+| **Nappe**<br>*Tablecloth* | 48 à 72 h (à valider) | **à remplir** |
+| **Rideaux, voilages**<br>*Curtains, sheers* | 4 à 5 jours (à valider) | **à remplir** |
+
+### Détachage / Stain removal
+
+| Prestation | Délai indicatif | Prix « à partir de » |
+|---|---|---|
+| **Détachage localisé (vin, café, gras, maquillage…)**<br>*Spot stain removal (wine, coffee, grease, make-up…)* | Selon la tache, sur photo (à valider) | **à remplir** |
+| **Repassage seul**<br>*Pressing only* | 24 à 48 h (à valider) | **à remplir** |
 
 ## Horaires (`data/horaires.json`)
 
-- lundi : fermé
-- mardi : 07:15 – 19:00
-- mercredi : 07:15 – 19:00
-- jeudi : 07:15 – 19:00
-- vendredi : 07:15 – 19:00
-- samedi : 07:15 – 19:00
+- lundi : 09:00 – 19:00
+- mardi : 09:00 – 19:00
+- mercredi : 09:00 – 19:00
+- jeudi : 09:00 – 19:00
+- vendredi : 09:00 – 19:00
+- samedi : 09:00 – 19:00
 - dimanche : fermé
 
 Fermetures exceptionnelles : Noël (2026-12-25), Jour de l'an (2027-01-01).
 
 ## Bandeau d'annonces (`data/annonces.json`)
 
-- **Par défaut** : Ouvert du mardi au samedi dès 7 h 15, sans interruption jusqu'à 19 h. *(Open Tuesday to Saturday from 7:15am, straight through to 7pm.)*
-- **2026-12-18 → 2026-12-25** : L'atelier sera fermé le jeudi 25 décembre. Pensez à déposer vos réparations avant les fêtes. *(The workshop will be closed on Thursday 25 December. Drop off your repairs before the holidays.)* — lien « Horaires »
-- **2026-12-26 → 2027-01-01** : L'atelier sera fermé le vendredi 1er janvier. Bonnes fêtes à tous. *(The workshop will be closed on Friday 1 January. Happy holidays.)* — lien « Horaires »
+- **Par défaut** : Prix et délais affichés, sans surprise. *(Prices and turnaround times shown upfront, no surprises.)*
+- **2026-12-18 → 2026-12-25** : Le pressing sera fermé le vendredi 25 décembre. Pour vos tenues de fête, déposez-les avant le 22. *(We will be closed on Friday 25 December. For your party outfits, drop them off before the 22nd.)*, lien « Horaires »
+- **2026-12-26 → 2027-01-01** : Le pressing sera fermé le vendredi 1er janvier. Bonnes fêtes à tous. *(We will be closed on Friday 1 January. Happy holidays.)*, lien « Horaires »
 
 ## Textes du site
 
-Chaque ligne : clé, français, anglais. Les textes marqués **à valider** demandent une confirmation de l'atelier.
+Chaque ligne : clé, français, anglais. Les textes marqués **à valider** demandent une confirmation du pressing.
 
 ### meta
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `meta.title` | Cordonnier à Amiens, clés et serrurerie | Cordonnerie Henriville, Maître Artisan | Shoe Repair in Amiens, Keys & Locks | Cordonnerie Henriville, Master Craftsman | |
-| `meta.description` | Cordonnerie Henriville, Maître Artisan cordonnier à Amiens : talons, ressemelage, couture, cuir, sacs, reproduction de clés et badges. Sans rendez-vous, du mardi au samedi dès 7 h 15. 4,8/5 sur Google. | Cordonnerie Henriville, master shoemaker in Amiens: heels, resoling, stitching, leather care, bags, key cutting and fobs. No appointment needed, Tuesday to Saturday from 7:15am. Rated 4.8/5 on Google. | |
-| `meta.ogAlt` | Les mains du cordonnier finissent un mocassin noir à la ponceuse, à la Cordonnerie Henriville d’Amiens | The shoemaker's hands finishing a black loafer on the sanding wheel at Cordonnerie Henriville, Amiens | |
+| `meta.title` | Pressing et teinturerie à Amiens, centre-ville | Teinturerie des Jacobins | Dry cleaner in Amiens city centre | Teinturerie des Jacobins | |
+| `meta.description` | Teinturerie des Jacobins, pressing du centre-ville d’Amiens, 47 rue des Jacobins : chemises, costumes, manteaux, robes de mariée, couettes et détachage. Prix et délais affichés, devis sur photo. Du lundi au samedi. | Teinturerie des Jacobins, dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, wedding dresses, duvets and stain removal. Prices and turnaround shown upfront, quotes from a photo. Monday to Saturday. | |
+| `meta.ogAlt` | Teinturerie des Jacobins, pressing et teinturerie au 47 rue des Jacobins, centre-ville d’Amiens | Teinturerie des Jacobins, dry cleaner at 47 rue des Jacobins, Amiens city centre | |
 
 ### nav
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `nav.cordonnerie` | Cordonnerie | Shoe repair | |
-| `nav.cles` | Clés & serrurerie | Keys & locks | |
-| `nav.cuir` | Cuir & maroquinerie | Leather & bags | |
-| `nav.tarifs` | Tarifs | Prices | |
-| `nav.infos` | Infos | Visit | |
-| `nav.devis` | Demander un devis | Get a quote | |
+| `nav.services` | Services | Services | |
+| `nav.tarifs` | Tarifs et délais | Prices & times | |
+| `nav.infos` | Infos | Info | |
+| `nav.devis` | Demander un devis | Request a quote | |
 | `nav.devisShort` | Devis | Quote | |
 | `nav.call` | Appeler | Call | |
 | `nav.menu` | Menu | Menu | |
 | `nav.close` | Fermer le menu | Close menu | |
-| `nav.home` | Cordonnerie Henriville, accueil | Cordonnerie Henriville, home | |
-| `nav.instagram` | La Cordonnerie Henriville sur Instagram | Cordonnerie Henriville on Instagram | |
+| `nav.home` | Teinturerie des Jacobins, accueil | Teinturerie des Jacobins, home | |
 | `nav.lang` | Langue | Language | |
 | `nav.skip` | Aller au contenu | Skip to content | |
 
@@ -122,17 +136,6 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 |---|---|---|---|
 | `announce.close` | Fermer le bandeau | Close banner | |
 
-### status
-
-| Clé | Français | English | |
-|---|---|---|---|
-| `status.open` | Ouvert maintenant | Open now | |
-| `status.closed` | Fermé | Closed | |
-| `status.until` | jusqu’à {time} | until {time} | |
-| `status.reopens` | réouverture {day} à {time} | opens {day} at {time} | |
-| `status.today` | aujourd’hui | today | |
-| `status.tomorrow` | demain | tomorrow | |
-
 ### rating
 
 | Clé | Français | English | |
@@ -145,330 +148,309 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `hero.eyebrow` | Maître artisan cordonnier · Henriville, Amiens | Master shoemaker · Henriville, Amiens | |
-| `hero.title` | On répare,  *on ne jette pas* | We repair,  *we don’t throw away* | |
-| `hero.lead` | Talons, semelles, coutures, cuir, sacs, clés : l’atelier du quartier Henriville remet en état ce que vous aimez porter, à un prix honnête. Sans rendez-vous, dès 7 h 15. | Heels, soles, stitching, leather, bags, keys: the Henriville neighbourhood workshop brings back the things you love to wear, at an honest price. No appointment, from 7:15am. | |
-| `hero.devis` | Demander un devis | Get a quote | |
+| `hero.eyebrow` | Pressing · Teinturerie · Rue des Jacobins, Amiens | Dry cleaning · Dyeing · Rue des Jacobins, Amiens | |
+| `hero.title` | Vos vêtements *entre de bonnes mains* | Your clothes *in good hands* | |
+| `hero.lead` | Chemises, costumes, manteaux, robes de mariée, couettes : votre pressing du centre-ville nettoie, détache et repasse, avec un prix et un délai annoncés avant le dépôt. | Shirts, suits, coats, wedding dresses, duvets: your city-centre dry cleaner cleans, removes stains and presses, with the price and the ready date given before you drop off. | |
+| `hero.devis` | Demander un devis | Request a quote | |
 | `hero.tarifs` | Voir les tarifs | See prices | |
 
 ### tiles
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `tiles.eyebrow` | L’atelier | The workshop | |
-| `tiles.title` | Ce qu’on répare, ce qu’on reproduit | What we repair, what we copy | |
+| `tiles.eyebrow` | Nos services | Our services | |
+| `tiles.title` | Ce que vous pouvez nous confier | What you can bring us | |
+| `tiles.lead` | Pour chaque famille de vêtements, le prix de départ et le délai habituel. Le détail est dans le tableau des tarifs. | For each type of garment, the starting price and the usual turnaround. Full details are in the price list. | |
 | `tiles.from` | à partir de {price} | from {price} | |
-| `tiles.onQuote` | Prix sur devis | Price on quote | |
-| `tiles.items.talons.title` | Talons & semelles | Heels & soles | |
-| `tiles.items.talons.text` | Patins, embouts, talons, ressemelage gomme ou cuir. | Sole protectors, heel tips, heels, rubber or leather resoling. | |
-| `tiles.items.couture.title` | Couture & cuir | Stitching & leather | |
-| `tiles.items.couture.text` | Coutures, recollage, fermetures de bottes, teinture, entretien. | Stitching, re-gluing, boot zips, dyeing, leather care. | |
-| `tiles.items.sacs.title` | Sacs & maroquinerie | Bags & leather goods | |
-| `tiles.items.sacs.text` | Sacs, ceintures, anses, fermetures éclair, petite maroquinerie. | Bags, belts, handles, zips, small leather goods. | |
-| `tiles.items.cles.title` | Clés & badges | Keys & fobs | |
-| `tiles.items.cles.text` | Clés plates, de sécurité, de voiture, badges d’immeuble. | Flat keys, high-security keys, car keys, building fobs. | |
-| `tiles.items.serrurerie.title` | Serrurerie | Locksmithing | **à valider (prestations de serrurerie)** |
-| `tiles.items.serrurerie.text` | Cylindres et serrures de boîte aux lettres : demandez-nous. | Lock cylinders and letterbox locks: just ask us. | **à valider (prestations de serrurerie)** |
-| `tiles.items.petits.title` | Petits services | Small jobs | |
-| `tiles.items.petits.text` | Piles de montre, gravure, plaques, produits d’entretien. | Watch batteries, engraving, name plates, care products. | |
+| `tiles.onQuote` | Tarif sur demande | Price on request | |
+| `tiles.items.chemises.title` | Chemises | Shirts | |
+| `tiles.items.chemises.text` | Lavées, repassées, rendues sur cintre ou pliées. Chemisiers, pulls et gilets aussi. | Washed, pressed, returned on a hanger or folded. Blouses, jumpers and cardigans too. | |
+| `tiles.items.costumes.title` | Costumes | Suits | |
+| `tiles.items.costumes.text` | Deux ou trois pièces, vestes, pantalons, cravates : nettoyés et repassés, prêts à porter. | Two or three-piece suits, jackets, trousers, ties: cleaned and pressed, ready to wear. | |
+| `tiles.items.manteaux.title` | Manteaux | Coats | |
+| `tiles.items.manteaux.text` | Laine, cachemire, doudounes, trenchs : un nettoyage qui respecte la matière et la coupe. | Wool, cashmere, down jackets, trench coats: cleaning that respects the fabric and the cut. | |
+| `tiles.items.robes.title` | Robes et robes de mariée | Dresses & wedding dresses | |
+| `tiles.items.robes.text` | Robes du quotidien, de soirée, de cérémonie, et votre robe de mariée après le grand jour. | Everyday, evening and occasion dresses, and your wedding dress after the big day. | |
+| `tiles.items.cuir.title` | Cuir et daim | Leather & suede | **à valider (cuir et daim traités ?)** |
+| `tiles.items.cuir.text` | Vestes, blousons et manteaux en cuir, daim ou nubuck. Prestation à confirmer au comptoir. | Leather, suede or nubuck jackets and coats. Service to be confirmed in store. | **à valider (cuir et daim traités ?)** |
+| `tiles.items.linge.title` | Linge de maison et couettes | Household linen & duvets | |
+| `tiles.items.linge.text` | Couettes, couvertures, plaids, nappes, rideaux : tout ce qui ne rentre pas dans votre machine. | Duvets, blankets, throws, tablecloths, curtains: everything too big for your machine. | |
 
 ### strip
 
 | Clé | Français | English | |
 |---|---|---|---|
 | `strip.label` | En bref | At a glance | |
-| `strip.items.0.title` | Ouvert dès 7 h 15 | Open from 7:15am | |
-| `strip.items.0.text` | Du mardi au samedi, sans interruption jusqu’à 19 h. | Tuesday to Saturday, straight through to 7pm. | |
-| `strip.items.1.title` | Sans rendez-vous | No appointment | |
-| `strip.items.1.text` | Passez déposer, on regarde avec vous. | Drop by, we’ll take a look together. | |
-| `strip.items.2.title` | Devis par photo | Quote by photo | |
-| `strip.items.2.text` | Envoyez 1 à 3 photos, on vous répond. | Send 1 to 3 photos and we’ll reply. | |
-| `strip.items.3.title` | 03 22 95 65 63 | +33 3 22 95 65 63 | |
-| `strip.items.3.text` | Une question ? Appelez l’atelier. | A question? Call the workshop. | |
-
-### beforeAfter
-
-| Clé | Français | English | |
-|---|---|---|---|
-| `beforeAfter.eyebrow` | Avant / après | Before / after | |
-| `beforeAfter.title` | La preuve par l’atelier | The proof is in the workshop | |
-| `beforeAfter.lead` | Faites glisser le curseur pour comparer. Les photos sont prises à l’atelier, avant et après réparation. | Drag the slider to compare. Photos are taken in the workshop, before and after the repair. | |
-| `beforeAfter.before` | Avant | Before | |
-| `beforeAfter.after` | Après | After | |
-| `beforeAfter.handle` | Comparer avant et après | Compare before and after | |
-| `beforeAfter.soon` | Les premières photos avant / après arrivent : chaussures ressemelées, sacs remis en couleur. | The first before / after photos are on their way: resoled shoes, bags brought back to colour. | |
-| `beforeAfter.slots.0` | Chaussures ressemelées | Resoled shoes | |
-| `beforeAfter.slots.1` | Sac remis en couleur | Bag brought back to colour | |
+| `strip.items.0.title` | Prix affichés | Prices shown | |
+| `strip.items.0.text` | Le tarif de chaque article, avant même de passer la porte. | The price of every item, before you even walk in. | |
+| `strip.items.1.title` | Délais clairs | Clear turnaround | |
+| `strip.items.1.text` | La date de retrait est notée sur votre ticket. | Your ready date is written on your ticket. | |
+| `strip.items.2.title` | Détachage | Stain removal | |
+| `strip.items.2.text` | Une tache tenace ? Envoyez-nous d’abord une photo. | A stubborn stain? Send us a photo first. | |
+| `strip.items.3.title` | Centre-ville | City centre | |
+| `strip.items.3.text` | Rue des Jacobins, du lundi au samedi. | Rue des Jacobins, Monday to Saturday. | |
 
 ### tarifs
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `tarifs.eyebrow` | Tarifs & délais | Prices & turnaround | |
-| `tarifs.title` | Des prix clairs, annoncés avant de commencer | Clear prices, given before we start | |
-| `tarifs.lead` | Les prix sont indicatifs : chaque paire, chaque sac est différent. On regarde l’objet avec vous et on vous donne le prix avant de toucher à quoi que ce soit. | Prices are a guide: every pair and every bag is different. We look at the item with you and give you the price before touching anything. | |
-| `tarifs.note` | Délais donnés à titre indicatif, selon la charge de l’atelier. | Turnaround times are a guide and depend on how busy the workshop is. | |
-| `tarifs.head.service` | Prestation | Service | |
+| `tarifs.eyebrow` | Tarifs et délais | Prices & turnaround | |
+| `tarifs.title` | Le prix et le délai, avant de déposer | The price and the time, before you drop off | |
+| `tarifs.lead` | Les prix sont donnés « à partir de » : la matière, la doublure ou une tache particulière peuvent faire varier le tarif. Dans ce cas, il vous est annoncé au comptoir, avant que l’on commence. | Prices are “from” prices: the fabric, the lining or a particular stain can change the cost. If so, you are told at the counter, before any work starts. | |
+| `tarifs.promises.0` | Le prix est confirmé au dépôt, rien ne s’ajoute au retrait. | The price is confirmed at drop-off, nothing is added at collection. | **à valider (engagements prix et ticket)** |
+| `tarifs.promises.1` | La date de retrait est notée sur votre ticket. | Your ready date is written on your ticket. | **à valider (engagements prix et ticket)** |
+| `tarifs.promises.2` | Pour une pièce délicate ou une tache, un devis sur photo. | For a delicate piece or a stain, a quote from a photo. | **à valider (engagements prix et ticket)** |
+| `tarifs.note` | Délais indicatifs, hors dimanches et jours fériés, selon l’affluence. Un prix qui n’est pas affiché vous est donné au comptoir ou par téléphone. | Turnaround times are a guide, excluding Sundays and public holidays, and depend on how busy we are. Any price not shown is given at the counter or over the phone. | |
+| `tarifs.head.service` | Article | Item | |
 | `tarifs.head.price` | Prix indicatif | Guide price | |
 | `tarifs.head.delay` | Délai | Turnaround | |
 | `tarifs.from` | à partir de {price} | from {price} | |
-| `tarifs.onQuote` | sur devis | on quote | |
+| `tarifs.onQuote` | sur demande | on request | |
 | `tarifs.confirm` | à confirmer | to be confirmed | |
-| `tarifs.ask` | Demander un devis | Get a quote | |
+| `tarifs.ask` | Demander un devis | Request a quote | |
 
 ### blocks
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `blocks.atelier.eyebrow` | L’atelier | The workshop | |
-| `blocks.atelier.title` | Un atelier de quartier, ouvert avant le travail | A neighbourhood workshop that opens before work | |
-| `blocks.atelier.text` | Au 34 rue Gaulthier de Rumilly, l’atelier ouvre à 7 h 15 et ne ferme pas le midi. Vous déposez vos chaussures en partant au travail, vous les reprenez en rentrant. Les petites réparations se font souvent pendant que vous attendez. | At 34 rue Gaulthier de Rumilly, the workshop opens at 7:15am and stays open through lunch. Drop your shoes off on the way to work, pick them up on the way home. Small repairs are often done while you wait. | |
-| `blocks.atelier.cta` | Horaires et accès | Hours and directions | |
-| `blocks.cles.eyebrow` | Clés & serrurerie | Keys & locks | **à valider (types de clés)** |
-| `blocks.cles.title` | Un double de clé, le temps d’un café | A spare key in the time it takes to have a coffee | **à valider (types de clés)** |
-| `blocks.cles.text` | Clés plates de maison, de cave ou de boîte aux lettres, clés de sécurité sur présentation de la carte de propriété, clés de voiture et badges d’immeuble selon les modèles. Apportez la clé d’origine, on vérifie avec vous qu’elle se reproduit. | Flat keys for your home, cellar or letterbox, high-security keys with the owner’s card, car keys and building fobs depending on the model. Bring the original key and we’ll check with you that it can be copied. | **à valider (types de clés)** |
-| `blocks.cles.cta` | Reproduction de clés | Key cutting | **à valider (types de clés)** |
-| `blocks.cuir.eyebrow` | Cuir & maroquinerie | Leather & bags | |
-| `blocks.cuir.title` | Le cuir se soigne, il ne se jette pas | Leather can be cared for, not thrown away | |
-| `blocks.cuir.text` | Un sac décoloré, une couture qui lâche, une ceinture trop longue, une fermeture éclair cassée : le cuir supporte très bien la réparation. Teinture, couture, remplacement d’anses, on vous dit franchement ce qui vaut la peine d’être fait. | A faded bag, a seam coming apart, a belt that’s too long, a broken zip: leather takes repair very well. Dyeing, stitching, new handles: we’ll tell you honestly what’s worth doing. | |
-| `blocks.cuir.cta` | Demander un devis cuir | Get a leather quote | |
-
-### metier
-
-| Clé | Français | English | |
-|---|---|---|---|
-| `metier.eyebrow` | Le métier | The craft | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.title` | Maître artisan, ça veut dire quelque chose | Master craftsman is more than a title | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.text` | Le titre de Maître Artisan est délivré par la Chambre de métiers et de l’artisanat. Il reconnaît une qualification et des années de pratique dans le métier. À l’atelier, cela se traduit simplement : on prend le temps de regarder, on vous dit ce qui se répare et ce qui ne vaut pas la dépense, et on fait le travail à la main. | The Maître Artisan title is awarded by the French Chamber of Trades and Crafts. It recognises qualifications and years of practice in the trade. In the workshop it simply means this: we take the time to look, we tell you what can be fixed and what isn’t worth the money, and we do the work by hand. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.points.0` | Réparer plutôt que racheter : une bonne paire ressemelée repart pour des années. | Repair rather than replace: a good pair, resoled, goes on for years. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.points.1` | Le prix annoncé avant de commencer, sans surprise au retrait. | The price is given before we start, no surprise when you collect. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.points.2` | Des conseils d’entretien pour que la réparation dure. | Care advice so the repair lasts. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.credit` | Photo : {credit} | Photo: {credit} | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.eyebrow` | Conseils d’entretien | Care tips | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.title` | Quatre gestes qui font durer vos chaussures | Four habits that make your shoes last | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.0.title` | Alterner les paires | Rotate your pairs | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.0.text` | Le cuir a besoin d’un jour pour sécher de la transpiration. Deux paires portées en alternance durent plus de deux fois plus longtemps. | Leather needs a day to dry out. Two pairs worn in turn last more than twice as long. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.1.title` | Des embauchoirs en bois | Wooden shoe trees | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.1.text` | Glissés dès que vous retirez vos chaussures, ils gardent la forme et absorbent l’humidité. | Slipped in as soon as you take your shoes off, they keep the shape and absorb moisture. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.2.title` | Des patins sur cuir neuf | Protectors on new leather | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.2.text` | Sur une semelle en cuir, un patin posé tôt protège l’avant du pied et retarde le ressemelage. | On a leather sole, a protector fitted early guards the front of the foot and delays resoling. | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.3.title` | Loin du radiateur | Away from the radiator | **à valider (parcours, titre de Maître Artisan)** |
-| `metier.tips.items.3.text` | Mouillées, laissez-les sécher à l’air libre, bourrées de papier journal. La chaleur directe craquelle le cuir. | When wet, let them dry in the open air, stuffed with newspaper. Direct heat cracks leather. | **à valider (parcours, titre de Maître Artisan)** |
+| `blocks.delicats.eyebrow` | Pièces délicates | Delicate pieces | **à valider (méthode)** |
+| `blocks.delicats.title` | Laine, soie, cachemire : chaque matière a son soin | Wool, silk, cashmere: every fabric gets its own care | **à valider (méthode)** |
+| `blocks.delicats.text` | Avant de nettoyer, on lit l’étiquette d’entretien, on regarde la matière, la doublure, les boutons. Un costume revient défroissé et prêt à porter, un manteau de laine garde sa tenue, un chemisier en soie est traité à part. | Before cleaning, we read the care label and check the fabric, the lining and the buttons. A suit comes back crease-free and ready to wear, a wool coat keeps its shape, a silk blouse is handled separately. | **à valider (méthode)** |
+| `blocks.delicats.cta` | Voir les tarifs | See prices | **à valider (méthode)** |
+| `blocks.delicats.slot` | Costumes et manteaux | Suits and coats | **à valider (méthode)** |
+| `blocks.detachage.eyebrow` | Détachage | Stain removal | |
+| `blocks.detachage.title` | Une tache ? Envoyez d’abord une photo | A stain? Send us a photo first | |
+| `blocks.detachage.text` | Vin, café, gras, maquillage, encre : chaque tache se traite différemment, selon sa nature, son ancienneté et le tissu. Avec une photo, le pressing vous dit ce qu’il est possible de faire et à quel prix, avant que vous vous déplaciez. | Wine, coffee, grease, make-up, ink: every stain is treated differently, depending on what it is, how old it is and the fabric. With a photo, we can tell you what can be done and at what price, before you make the trip. | |
+| `blocks.detachage.cta` | Demander un devis | Request a quote | |
+| `blocks.detachage.slot` | La tache en photo | The stain, in a photo | |
+| `blocks.mariee.eyebrow` | Robe de mariée | Wedding dress | **à valider (robe de mariée traitée sur place ?)** |
+| `blocks.mariee.title` | Après le grand jour, une robe propre et bien rangée | After the big day, a clean dress, carefully put away | **à valider (robe de mariée traitée sur place ?)** |
+| `blocks.mariee.text` | Traîne marquée par l’herbe, ourlet poussiéreux, quelques gouttes de champagne : une robe de mariée se nettoie avec précaution, dentelle, broderies et perles comprises. Décrivez-la ou envoyez une photo, vous recevez un devis avant de la confier. | A train marked by the grass, a dusty hem, a few drops of champagne: a wedding dress needs careful cleaning, lace, embroidery and beads included. Describe it or send a photo and you get a quote before you hand it over. | **à valider (robe de mariée traitée sur place ?)** |
+| `blocks.mariee.cta` | Demander un devis | Request a quote | **à valider (robe de mariée traitée sur place ?)** |
+| `blocks.mariee.slot` | Robe de mariée | Wedding dress | **à valider (robe de mariée traitée sur place ?)** |
 
 ### reviews
 
 | Clé | Français | English | |
 |---|---|---|---|
 | `reviews.eyebrow` | Avis Google | Google reviews | |
-| `reviews.title` | Ce que les clients retiennent | What customers remember | |
-| `reviews.themes.0` | Des prix honnêtes | Honest prices | |
-| `reviews.themes.1` | Un vrai travail d’artisan | Real craftsmanship | |
-| `reviews.themes.2` | Un atelier de quartier | A neighbourhood workshop | |
+| `reviews.title` | Votre avis nous fait avancer | Your feedback helps us improve | |
+| `reviews.lead` | Nous lisons chaque avis. C’est pour cela que les prix et les délais sont affichés ici, article par article, avant même que vous passiez la porte. | We read every review. That is why prices and turnaround times are listed here, item by item, before you even walk in. | |
+| `reviews.count` | {count} avis Google | {count} Google reviews | |
 | `reviews.cta` | Lire les avis sur Google | Read the reviews on Google | |
+
+### cta
+
+| Clé | Français | English | |
+|---|---|---|---|
+| `cta.title` | Une question sur un vêtement ? | A question about a garment? | |
+| `cta.text` | Envoyez une photo ou appelez le pressing : vous obtenez un prix et un délai avant de vous déplacer. | Send a photo or call us: you get a price and a turnaround time before making the trip. | |
 
 ### infos
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `infos.eyebrow` | Infos pratiques | Visit | |
-| `infos.title` | Passez à l’atelier | Come to the workshop | |
+| `infos.eyebrow` | Infos pratiques | Practical info | |
+| `infos.title` | Passez au pressing | Visit us | |
 | `infos.address` | Adresse | Address | |
 | `infos.route` | Itinéraire | Directions | |
 | `infos.phone` | Téléphone | Phone | |
 | `infos.hours` | Horaires | Opening hours | |
 | `infos.closedDay` | Fermé | Closed | |
 | `infos.closures` | Fermetures à venir | Upcoming closures | |
-| `infos.access` | Accès | Getting here | |
-| `infos.accessText` | Quartier Henriville, au sud du centre-ville, à quelques minutes à pied de la gare d’Amiens. Stationnement dans les rues voisines. | Henriville neighbourhood, just south of the city centre, a few minutes’ walk from Amiens station. Street parking nearby. | **à valider (accès, stationnement)** |
-| `infos.mapTitle` | Plan d’accès à la Cordonnerie Henriville, 34 rue Gaulthier de Rumilly à Amiens | Map to Cordonnerie Henriville, 34 rue Gaulthier de Rumilly, Amiens | |
+| `infos.access` | Accès et stationnement | Getting here & parking | |
+| `infos.accessText` | En plein centre-ville d’Amiens, rue des Jacobins, à quelques pas de la Comédie de Picardie. Stationnement payant dans la rue et les rues voisines, parkings du centre-ville à quelques minutes à pied. | Right in Amiens city centre, on rue des Jacobins, a few steps from the Comédie de Picardie theatre. Paid parking on the street and nearby streets, city-centre car parks a few minutes’ walk away. | **à valider (accès, stationnement)** |
+| `infos.mapTitle` | Plan d’accès à la Teinturerie des Jacobins, 47 rue des Jacobins à Amiens | Map to Teinturerie des Jacobins, 47 rue des Jacobins, Amiens | |
 
 ### faq
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `faq.eyebrow` | Questions fréquentes | FAQ | |
-| `faq.title` | Avant de venir | Before you come | |
-| `faq.items.0.q` | Faut-il prendre rendez-vous ? | Do I need an appointment? | |
-| `faq.items.0.a` | Non. L’atelier vous accueille sans rendez-vous, du mardi au samedi, de 7 h 15 à 19 h sans interruption. | No. The workshop welcomes you without an appointment, Tuesday to Saturday, from 7:15am to 7pm without a break. | |
-| `faq.items.1.q` | Combien de temps pour une réparation ? | How long does a repair take? | **à valider (délais)** |
-| `faq.items.1.a` | Les clés, les piles de montre, les embouts de talons et les ceintures se font souvent pendant que vous attendez. Un ressemelage ou une teinture prennent quelques jours. On vous donne la date de retrait au moment du dépôt. | Keys, watch batteries, heel tips and belts are often done while you wait. Resoling or dyeing takes a few days. We give you the pick-up date when you drop the item off. | **à valider (délais)** |
-| `faq.items.2.q` | Comment obtenir un devis ? | How do I get a quote? | |
-| `faq.items.2.a` | Passez à l’atelier avec l’objet, ou envoyez 1 à 3 photos par le formulaire de devis. On vous répond avec un prix et un délai, et on ne commence rien sans votre accord. | Come to the workshop with the item, or send 1 to 3 photos through the quote form. We reply with a price and a turnaround time, and nothing starts without your go-ahead. | |
-| `faq.items.3.q` | Quelles clés pouvez-vous reproduire ? | Which keys can you copy? | **à valider (clés reproduites)** |
-| `faq.items.3.a` | Les clés plates courantes (maison, cave, boîte aux lettres), les clés de sécurité sur présentation de la carte de propriété, certaines clés de voiture et les badges d’immeuble selon les modèles. Apportez la clé d’origine : on vous dit tout de suite si c’est possible. | Common flat keys (home, cellar, letterbox), high-security keys with the owner’s card, some car keys and building fobs depending on the model. Bring the original key and we’ll tell you straight away if it’s possible. | **à valider (clés reproduites)** |
-| `faq.items.4.q` | Quels moyens de paiement acceptez-vous ? | Which payment methods do you accept? | **à valider (moyens de paiement)** |
-| `faq.items.4.a` | Espèces et carte bancaire. Le paiement se fait au retrait, une fois la réparation faite. | Cash and card. You pay when you collect, once the repair is done. | **à valider (moyens de paiement)** |
-| `faq.items.5.q` | Et si j’oublie de récupérer mes chaussures ? | What if I forget to collect my shoes? | **à valider (objets oubliés)** |
-| `faq.items.5.a` | Gardez le ticket remis au dépôt. Les objets sont conservés à l’atelier ; au-delà de plusieurs mois sans nouvelles, nous vous contactons. Passez ou appelez si vous avez un doute. | Keep the ticket you get when you drop them off. Items are kept at the workshop; after several months without news, we get in touch. Drop by or call if in doubt. | **à valider (objets oubliés)** |
+| `faq.eyebrow` | Questions fréquentes | Frequently asked questions | |
+| `faq.title` | Avant de passer | Before you come | |
+| `faq.items.0.q` | Quels sont vos horaires ? | What are your opening hours? | **à valider (horaires)** |
+| `faq.items.0.a` | Le pressing est ouvert du lundi au samedi, de 9 h à 19 h. Vous pouvez déposer et reprendre vos vêtements sans rendez-vous. | We are open Monday to Saturday, 9am to 7pm. You can drop off and collect without an appointment. | **à valider (horaires)** |
+| `faq.items.1.q` | En combien de temps mes vêtements sont-ils prêts ? | How long until my clothes are ready? | **à valider (délais)** |
+| `faq.items.1.a` | Cela dépend de l’article : comptez en général 24 à 48 h pour une chemise, quelques jours pour un manteau ou une couette, et un délai sur devis pour une robe de mariée. Le tableau des tarifs donne le délai de chaque article, et la date de retrait est notée sur votre ticket. | It depends on the item: usually 24 to 48 hours for a shirt, a few days for a coat or a duvet, and a quoted time for a wedding dress. The price list gives the turnaround for each item, and your ready date is written on your ticket. | **à valider (délais)** |
+| `faq.items.2.q` | Comment connaître le prix avant de déposer ? | How can I know the price before dropping off? | |
+| `faq.items.2.a` | Les prix de départ sont affichés dans le tableau des tarifs. Pour une pièce particulière ou une tache, envoyez 1 à 3 photos par le formulaire de devis, ou passez au comptoir : le prix vous est annoncé avant que l’on commence. | Starting prices are listed in the price table. For a particular piece or a stain, send 1 to 3 photos through the quote form, or come to the counter: you get the price before any work starts. | |
+| `faq.items.3.q` | Toutes les taches partent-elles ? | Do all stains come out? | |
+| `faq.items.3.a` | La plupart, oui, surtout si elles sont récentes. Certaines taches anciennes ou certaines matières fragiles ne permettent pas un résultat parfait : on vous le dit avant, honnêtement. En attendant, ne frottez pas et ne repassez pas une tache, apportez le vêtement le plus tôt possible. | Most do, especially fresh ones. Some old stains or fragile fabrics will not give a perfect result: we tell you honestly beforehand. In the meantime, don’t rub or iron a stain, and bring the garment in as soon as you can. | |
+| `faq.items.4.q` | Comment puis-je payer ? | How can I pay? | **à valider (moyens de paiement)** |
+| `faq.items.4.a` | Le paiement se fait au retrait de vos vêtements, en espèces ou par carte bancaire. | You pay when you collect your clothes, in cash or by card. | **à valider (moyens de paiement)** |
+| `faq.items.5.q` | Où se garer pour déposer mes vêtements ? | Where can I park to drop off my clothes? | **à valider (stationnement)** |
+| `faq.items.5.a` | Le pressing est rue des Jacobins, en plein centre-ville. Le stationnement est payant dans la rue et les rues voisines, et plusieurs parkings du centre sont à quelques minutes à pied. | We are on rue des Jacobins, right in the city centre. There is paid parking on the street and nearby streets, and several city-centre car parks a few minutes’ walk away. | **à valider (stationnement)** |
 
 ### footer
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `footer.tagline` | Cordonnerie, cuir, clés et serrurerie au cœur du quartier Henriville, à Amiens. Maître artisan cordonnier. | Shoe repair, leather, keys and locks in the heart of the Henriville neighbourhood, Amiens. Master shoemaker. | |
-| `footer.contact` | Atelier | Workshop | |
+| `footer.tagline` | Pressing et teinturerie au centre-ville d’Amiens : chemises, costumes, manteaux, robes de mariée, linge de maison et détachage. | Dry cleaning and dyeing in Amiens city centre: shirts, suits, coats, wedding dresses, household linen and stain removal. | |
+| `footer.contact` | Le pressing | The shop | |
 | `footer.pages` | Pages | Pages | |
-| `footer.days` | Du mardi au samedi<br>7 h 15 – 19 h, sans interruption | Tuesday to Saturday<br>7:15am – 7pm, no lunch break | |
-| `footer.closed` | Fermé le dimanche et le lundi | Closed Sunday and Monday | |
-| `footer.rights` | Cordonnerie Henriville, Amiens | Cordonnerie Henriville, Amiens | |
+| `footer.rights` | Teinturerie des Jacobins, Amiens | Teinturerie des Jacobins, Amiens | |
 | `footer.legal` | Mentions légales | Legal notice | |
+| `footer.logoTitle` | Teinturerie des Jacobins, pressing à Amiens | Teinturerie des Jacobins, dry cleaner in Amiens | |
+
+### slots
+
+| Clé | Français | English | |
+|---|---|---|---|
+| `slots.boutique` | La boutique | The shop | |
 
 ### devis
 
 | Clé | Français | English | |
 |---|---|---|---|
+| `devis.metaTitle` | Demander un devis de pressing à Amiens | Teinturerie des Jacobins | Request a dry cleaning quote in Amiens | Teinturerie des Jacobins | |
+| `devis.metaDescription` | Envoyez 1 à 3 photos de votre vêtement ou de la tache : la Teinturerie des Jacobins vous répond avec un prix et un délai. Pressing du centre-ville d’Amiens. | Send 1 to 3 photos of your garment or the stain: Teinturerie des Jacobins replies with a price and a turnaround time. Dry cleaner in Amiens city centre. | |
 | `devis.eyebrow` | Devis gratuit | Free quote | **à valider (devis gratuit ?)** |
-| `devis.title` | Demander un devis | Get a quote | |
-| `devis.lead` | Décrivez la réparation et joignez 1 à 3 photos. L’atelier vous répond avec un prix et un délai. Rien n’est commencé sans votre accord. | Describe the repair and attach 1 to 3 photos. The workshop replies with a price and a turnaround time. Nothing starts without your go-ahead. | |
+| `devis.title` | Demander un devis | Request a quote | |
+| `devis.lead` | Décrivez le vêtement et joignez 1 à 3 photos, surtout s’il s’agit d’une tache. Le pressing vous répond avec un prix et un délai. Rien n’est engagé sans votre accord. | Describe the garment and attach 1 to 3 photos, especially for a stain. We reply with a price and a turnaround time. Nothing is agreed without your go-ahead. | |
 | `devis.preferCall` | Plus simple au téléphone ? | Easier by phone? | |
-| `devis.sections.object` | L’objet | The item | |
-| `devis.sections.repair` | La réparation | The repair | |
+| `devis.sections.object` | Le vêtement | The garment | |
+| `devis.sections.repair` | La tache ou le besoin | The stain or what you need | |
 | `devis.sections.photos` | Les photos | Photos | |
-| `devis.sections.delay` | Le délai | Timing | |
+| `devis.sections.delay` | Le délai souhaité | When you need it | |
 | `devis.sections.contact` | Vos coordonnées | Your details | |
-| `devis.fields.objects.chaussures` | Chaussures | Shoes | |
-| `devis.fields.objects.sac` | Sac | Bag | |
-| `devis.fields.objects.ceinture` | Ceinture | Belt | |
-| `devis.fields.objects.cle` | Clé ou badge | Key or fob | |
+| `devis.fields.objects.chemise` | Chemise | Shirt | |
+| `devis.fields.objects.costume` | Costume | Suit | |
+| `devis.fields.objects.manteau` | Manteau, doudoune | Coat, down jacket | |
+| `devis.fields.objects.robe` | Robe | Dress | |
+| `devis.fields.objects.mariee` | Robe de mariée | Wedding dress | |
+| `devis.fields.objects.cuir` | Cuir, daim | Leather, suede | |
+| `devis.fields.objects.linge` | Linge, couette | Linen, duvet | |
 | `devis.fields.objects.autre` | Autre | Other | |
-| `devis.fields.repairsLabel` | Ce qu’il faut faire | What needs doing | |
+| `devis.fields.repairsLabel` | Votre besoin | What you need | |
 | `devis.fields.repairsHint` | plusieurs choix possibles | choose as many as you like | |
-| `devis.fields.repair` | Précisez si besoin | Any details | |
-| `devis.fields.repairPh` | Ex. : talon usé côté extérieur, couture décousue sur 3 cm, clé Fichet… | E.g. heel worn on the outside, seam open over 3 cm, Fichet key… | |
+| `devis.fields.repair` | Décrivez la tache ou le besoin | Describe the stain or what you need | |
+| `devis.fields.repairPh` | Ex. : tache de vin sur la manche depuis une semaine, robe en soie, costume à récupérer samedi… | E.g. wine stain on the sleeve, a week old; silk dress; suit needed by Saturday… | |
 | `devis.fields.photos` | Ajouter des photos | Add photos | |
-| `devis.fields.photosHint` | 1 à 3 photos : vue d’ensemble, puis le détail à réparer. | 1 to 3 photos: the whole item, then the detail to repair. | |
-| `devis.fields.photoRemove` | Retirer | Remove | |
+| `devis.fields.photosHint` | 1 à 3 photos : le vêtement en entier, la tache de près, et l’étiquette d’entretien si possible. | 1 to 3 photos: the whole garment, the stain up close, and the care label if possible. | |
+| `devis.fields.photoRemove` | Retirer la photo | Remove photo | |
 | `devis.fields.photosCount` | {count}/3 | {count}/3 | |
 | `devis.fields.delays.pas-presse` | Pas pressé | No rush | |
 | `devis.fields.delays.semaine` | Dans la semaine | Within the week | |
 | `devis.fields.delays.urgent` | Le plus vite possible | As soon as possible | |
-| `devis.fields.delays.date` | Pour une date précise : | By a set date: | |
-| `devis.fields.date` | Date souhaitée | Preferred date | |
+| `devis.fields.delays.date` | Pour une date précise : | By a specific date: | |
+| `devis.fields.date` | Date souhaitée | Date needed | |
 | `devis.fields.name` | Nom | Name | |
 | `devis.fields.phone` | Téléphone | Phone | |
 | `devis.fields.email` | E-mail | Email | |
-| `devis.fields.emailHint` | (pour recevoir la confirmation) | (to receive the confirmation) | |
+| `devis.fields.emailHint` | (pour recevoir la confirmation) | (to receive a confirmation) | |
 | `devis.fields.message` | Message | Message | |
-| `devis.fields.messagePh` | Une précision, une question, la marque de l’article… | A detail, a question, the brand of the item… | |
-| `devis.repairs.talons` | Talons | Heels | |
-| `devis.repairs.patins` | Patins | Sole protectors | |
-| `devis.repairs.ressemelage` | Ressemelage | Resoling | |
-| `devis.repairs.couture` | Couture | Stitching | |
-| `devis.repairs.fermeture` | Fermeture éclair | Zip | |
-| `devis.repairs.teinture` | Teinture, rénovation | Dyeing, restoration | |
-| `devis.repairs.entretien` | Entretien, cirage | Care, polishing | |
-| `devis.repairs.elargissement` | Élargissement | Stretching | |
-| `devis.repairs.anses` | Anses, poignées | Handles, straps | |
-| `devis.repairs.doublure` | Doublure | Lining | |
-| `devis.repairs.raccourcir` | Raccourcir | Shorten | |
-| `devis.repairs.trous` | Trous supplémentaires | Extra holes | |
-| `devis.repairs.boucle` | Changer la boucle | New buckle | |
-| `devis.repairs.cle-plate` | Clé plate | Flat key | |
-| `devis.repairs.cle-securite` | Clé de sécurité | High-security key | |
-| `devis.repairs.cle-voiture` | Clé de voiture | Car key | |
-| `devis.repairs.badge` | Badge | Fob | |
-| `devis.errors.object` | Choisissez le type d’objet. | Choose the type of item. | |
-| `devis.errors.repair` | Dites-nous ce qu’il faut faire (une case ou un mot). | Tell us what needs doing (a box or a few words). | |
+| `devis.fields.messagePh` | Une précision, une question, la marque ou la matière du vêtement… | Any detail, a question, the brand or fabric of the garment… | |
+| `devis.repairs.nettoyage` | Nettoyage | Cleaning | |
+| `devis.repairs.repassage` | Repassage | Pressing | |
+| `devis.repairs.detachage` | Détachage | Stain removal | |
+| `devis.errors.object` | Choisissez le type de vêtement. | Choose the type of garment. | |
+| `devis.errors.repair` | Dites-nous ce qu’il faut faire (une case ou quelques mots). | Tell us what needs doing (tick a box or write a few words). | |
 | `devis.errors.name` | Indiquez votre nom. | Please enter your name. | |
 | `devis.errors.phone` | Indiquez un numéro de téléphone valide. | Please enter a valid phone number. | |
-| `devis.errors.email` | Cette adresse e-mail ne semble pas valide. | This email address doesn’t look right. | |
+| `devis.errors.email` | Cette adresse e-mail ne semble pas valide. | This email address doesn’t look valid. | |
 | `devis.errors.photo` | Cette photo n’a pas pu être lue. Essayez une autre image. | This photo couldn’t be read. Try another image. | |
-| `devis.errors.generic` | L’envoi n’a pas abouti. Réessayez, ou appelez l’atelier au 03 22 95 65 63. | Sending failed. Please try again, or call the workshop on +33 3 22 95 65 63. | |
-| `devis.submit` | Envoyer la demande | Send the request | |
+| `devis.errors.generic` | L’envoi n’a pas abouti. Réessayez, ou appelez le pressing au 03 22 91 77 93. | Sending failed. Please try again, or call us on +33 3 22 91 77 93. | |
+| `devis.submit` | Envoyer la demande | Send request | |
 | `devis.sending` | Envoi… | Sending… | |
 | `devis.privacy` | Vos coordonnées servent uniquement à répondre à cette demande. Elles ne sont ni revendues ni utilisées pour de la publicité. | Your details are only used to reply to this request. They are never sold or used for advertising. | |
 | `devis.success.title` | Demande bien reçue | Request received | |
-| `devis.success.text` | L’atelier regarde vos photos et vous répond avec un prix et un délai. | The workshop will look at your photos and reply with a price and a turnaround time. | |
+| `devis.success.text` | Le pressing regarde votre demande et vous répond avec un prix et un délai. | We will look at your request and reply with a price and a turnaround time. | |
 | `devis.success.email` | Un récapitulatif vient de vous être envoyé par e-mail. | A summary has just been sent to your email. | |
-| `devis.success.notNotified` | Pour être sûr que l’atelier l’a bien reçue, appelez directement : | To be sure the workshop has received it, call directly: | |
-| `devis.success.again` | Faire une autre demande | Send another request | |
+| `devis.success.notNotified` | Pour être sûr que le pressing l’a bien reçue, appelez directement : | To make sure we received it, please call us directly: | |
+| `devis.success.again` | Faire une autre demande | Make another request | |
 | `devis.message.title` | Nouvelle demande de devis | New quote request | |
-| `devis.message.object` | Objet | Item | |
-| `devis.message.repairs` | Réparations | Repairs | |
+| `devis.message.object` | Vêtement | Garment | |
+| `devis.message.repairs` | Besoin | Needs | |
 | `devis.message.repair` | Précisions | Details | |
-| `devis.message.delay` | Délai souhaité | Timing | |
+| `devis.message.delay` | Délai souhaité | Needed | |
 | `devis.message.name` | Nom | Name | |
 | `devis.message.phone` | Téléphone | Phone | |
 | `devis.message.email` | E-mail | Email | |
 | `devis.message.message` | Message | Message | |
 | `devis.message.photos` | Photos jointes | Photos attached | |
 | `devis.email.subject` | Demande de devis | Quote request | |
-| `devis.email.confirmSubject` | Votre demande de devis, Cordonnerie Henriville | Your quote request, Cordonnerie Henriville | |
+| `devis.email.confirmSubject` | Votre demande de devis, Teinturerie des Jacobins | Your quote request, Teinturerie des Jacobins | |
 | `devis.email.confirmIntro` | Bonjour {name},<br><br>Merci pour votre demande. Voici ce que nous avons reçu : | Hello {name},<br><br>Thank you for your request. Here is what we received: | |
-| `devis.email.confirmOutro` | Nous revenons vers vous avec un prix et un délai. Pour toute question : {phone}, du mardi au samedi de 7 h 15 à 19 h.<br><br>Cordonnerie Henriville<br>34 rue Gaulthier de Rumilly, 80000 Amiens | We’ll get back to you with a price and a turnaround time. Any question: {phone}, Tuesday to Saturday, 7:15am to 7pm.<br><br>Cordonnerie Henriville<br>34 rue Gaulthier de Rumilly, 80000 Amiens, France | |
+| `devis.email.confirmOutro` | Nous revenons vers vous avec un prix et un délai. Pour toute question : {phone}, {hours}.<br><br>Teinturerie des Jacobins<br>47 rue des Jacobins, 80000 Amiens | We will get back to you with a price and a turnaround time. Any question: {phone}, {hours}.<br><br>Teinturerie des Jacobins<br>47 rue des Jacobins, 80000 Amiens, France | |
 
 ### pages
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `pages.cles.metaTitle` | Reproduction de clés à Amiens, badges et clés de sécurité | Cordonnerie Henriville | Key Cutting in Amiens, Fobs & High-Security Keys | Cordonnerie Henriville | |
-| `pages.cles.metaDescription` | Double de clé à Amiens, quartier Henriville : clés plates, clés de sécurité sur carte, clés de voiture, badges d’immeuble. Sans rendez-vous, dès 7 h 15, du mardi au samedi. | Key cutting in Amiens, Henriville: flat keys, high-security keys with card, car keys, building fobs. No appointment, from 7:15am, Tuesday to Saturday. | |
-| `pages.cles.eyebrow` | Clés & serrurerie · Amiens | Keys & locks · Amiens | |
-| `pages.cles.title` | Reproduction de clés à Amiens | Key cutting in Amiens | |
-| `pages.cles.intro` | Un double pour la nounou, une clé de cave perdue, un badge d’immeuble en plus : apportez la clé d’origine à l’atelier, la plupart des reproductions se font pendant que vous attendez. | A spare for the childminder, a lost cellar key, an extra building fob: bring the original key to the workshop, most copies are made while you wait. | |
-| `pages.cles.cta` | Demander un devis clé | Get a key quote | |
-| `pages.cles.listTitle` | Ce que nous reproduisons | What we copy | |
-| `pages.cles.list.0.title` | Clés plates | Flat keys | **à valider (types de clés)** |
-| `pages.cles.list.0.text` | Portes d’entrée, caves, garages, boîtes aux lettres, cadenas. | Front doors, cellars, garages, letterboxes, padlocks. | **à valider (types de clés)** |
-| `pages.cles.list.1.title` | Clés de sécurité | High-security keys | **à valider (types de clés)** |
-| `pages.cles.list.1.text` | Sur présentation de la carte de propriété du cylindre, selon la marque. | With the lock’s owner card, depending on the brand. | **à valider (types de clés)** |
-| `pages.cles.list.2.title` | Clés de voiture | Car keys | **à valider (types de clés)** |
-| `pages.cles.list.2.text` | Selon le modèle et l’année : appelez ou passez avec la clé pour vérifier. | Depending on make and year: call or drop by with the key to check. | **à valider (types de clés)** |
-| `pages.cles.list.3.title` | Badges d’immeuble | Building fobs | **à valider (types de clés)** |
-| `pages.cles.list.3.text` | Copie des badges les plus courants, selon la technologie du badge. | Copies of the most common fobs, depending on the technology. | **à valider (types de clés)** |
-| `pages.cles.howTitle` | Comment ça se passe | How it works | |
-| `pages.cles.how.0.title` | Apportez la clé d’origine | Bring the original key | |
-| `pages.cles.how.0.text` | Une copie de copie s’use plus vite et fonctionne moins bien. L’original donne le meilleur résultat. | A copy of a copy wears faster and works less well. The original gives the best result. | |
-| `pages.cles.how.1.title` | On vérifie avec vous | We check with you | |
-| `pages.cles.how.1.text` | Profil, marque, carte de propriété : on vous dit tout de suite si la reproduction est possible et à quel prix. | Profile, brand, owner’s card: we tell you straight away if it can be copied and at what price. | |
-| `pages.cles.how.2.title` | Essayez-la chez vous | Try it at home | |
-| `pages.cles.how.2.text` | Si une clé accroche, revenez avec : on la reprend. | If a key sticks, bring it back: we’ll fix it. | |
-| `pages.cles.serrurerie` | Serrurerie : cylindres et serrures de boîte aux lettres. Les prestations exactes sont à confirmer avec l’atelier, appelez-nous pour en parler. | Locksmithing: lock cylinders and letterbox locks. Exact services to be confirmed with the workshop, give us a call to discuss. | **à valider (serrurerie)** |
-| `pages.ressemelage.metaTitle` | Ressemelage à Amiens, talons et patins | Cordonnerie Henriville, Maître Artisan | Shoe Resoling in Amiens, Heels & Protectors | Cordonnerie Henriville | |
-| `pages.ressemelage.metaDescription` | Ressemelage cuir ou gomme à Amiens par un maître artisan cordonnier : talons, patins, coutures. Devis par photo, sans rendez-vous, quartier Henriville. | Leather or rubber resoling in Amiens by a master shoemaker: heels, sole protectors, stitching. Quote by photo, no appointment, Henriville neighbourhood. | |
-| `pages.ressemelage.eyebrow` | Cordonnerie · Amiens | Shoe repair · Amiens | |
-| `pages.ressemelage.title` | Ressemelage à Amiens | Shoe resoling in Amiens | |
-| `pages.ressemelage.intro` | Une bonne paire mérite plus d’une vie. Quand la semelle est usée ou percée, on la remplace en gardant le dessus, et vos chaussures repartent pour des années. | A good pair deserves more than one life. When the sole is worn or has a hole, we replace it and keep the upper, and your shoes are good for years more. | |
-| `pages.ressemelage.cta` | Demander un devis ressemelage | Get a resoling quote | |
-| `pages.ressemelage.listTitle` | Talons, patins, semelles | Heels, protectors, soles | |
-| `pages.ressemelage.list.0.title` | Ressemelage cuir | Leather resoling | |
-| `pages.ressemelage.list.0.text` | Pour les chaussures de ville à semelle cuir : on remplace la semelle à l’identique. | For leather-soled dress shoes: we replace the sole like for like. | |
-| `pages.ressemelage.list.1.title` | Ressemelage gomme | Rubber resoling | |
-| `pages.ressemelage.list.1.text` | Plus d’adhérence, plus de durée, idéal pour l’hiver amiénois. | More grip, longer wear, ideal for Amiens winters. | |
-| `pages.ressemelage.list.2.title` | Talons et embouts | Heels and heel tips | |
-| `pages.ressemelage.list.2.text` | Talons homme, embouts de talons femme : souvent fait pendant que vous attendez. | Men’s heels, women’s heel tips: often done while you wait. | |
-| `pages.ressemelage.list.3.title` | Patins | Sole protectors | |
-| `pages.ressemelage.list.3.text` | Une fine semelle de protection posée sous l’avant du pied, sur cuir neuf ou à peine usé. | A thin protective sole fitted under the front of the foot, on new or barely worn leather. | |
-| `pages.ressemelage.howTitle` | Quand faut-il ressemeler ? | When should you resole? | |
-| `pages.ressemelage.how.0.title` | La semelle s’amincit | The sole is getting thin | |
-| `pages.ressemelage.how.0.text` | Appuyez au centre de l’avant-pied : si c’est souple comme du carton, il est temps. | Press the middle of the forefoot: if it feels soft like cardboard, it’s time. | |
-| `pages.ressemelage.how.1.title` | Le talon est usé de biais | The heel wears at an angle | |
-| `pages.ressemelage.how.1.text` | Ne laissez pas l’usure atteindre la semelle : un talon se change vite et coûte peu. | Don’t let the wear reach the sole: a heel is quick and cheap to change. | |
-| `pages.ressemelage.how.2.title` | Avant le trou | Before the hole | |
-| `pages.ressemelage.how.2.text` | Une semelle percée laisse passer l’eau et abîme la première de propreté : ressemelez avant. | A sole with a hole lets water in and damages the insole: resole before. | |
-| `pages.ressemelage.related` | Un doute sur votre paire ? Envoyez une photo de la semelle, on vous dit ce qui est possible. | Not sure about your pair? Send a photo of the sole and we’ll tell you what’s possible. | |
+| `pages.pressing.metaTitle` | Pressing à Amiens, centre-ville : chemises, costumes, manteaux | Teinturerie des Jacobins | Dry cleaner in Amiens city centre: shirts, suits, coats | Teinturerie des Jacobins | |
+| `pages.pressing.metaDescription` | Pressing au centre-ville d’Amiens, 47 rue des Jacobins : nettoyage de chemises, costumes, manteaux, couettes, détachage. Prix et délais affichés, du lundi au samedi de 9 h à 19 h. | Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday, 9am to 7pm. | |
+| `pages.pressing.eyebrow` | Pressing · Centre-ville d’Amiens | Dry cleaning · Amiens city centre | |
+| `pages.pressing.title` | Pressing à Amiens | Dry cleaner in Amiens | |
+| `pages.pressing.intro` | Une chemise pour lundi, un costume pour un mariage, le manteau d’hiver à rafraîchir : déposez-les rue des Jacobins, en plein centre-ville. Le prix et la date de retrait vous sont donnés au comptoir. | A shirt for Monday, a suit for a wedding, the winter coat to freshen up: drop them off on rue des Jacobins, right in the city centre. You get the price and the ready date at the counter. | |
+| `pages.pressing.cta` | Demander un devis | Request a quote | |
+| `pages.pressing.listTitle` | Ce que nous nettoyons | What we clean | |
+| `pages.pressing.list.0.title` | Chemises et hauts | Shirts and tops | |
+| `pages.pressing.list.0.text` | Lavées et repassées, rendues sur cintre ou pliées, chemisiers et pulls compris. | Washed and pressed, returned on a hanger or folded, blouses and jumpers included. | |
+| `pages.pressing.list.1.title` | Costumes | Suits | |
+| `pages.pressing.list.1.text` | Vestes, pantalons, costumes deux ou trois pièces, cravates. | Jackets, trousers, two or three-piece suits, ties. | |
+| `pages.pressing.list.2.title` | Manteaux | Coats | |
+| `pages.pressing.list.2.text` | Laine, cachemire, doudounes, imperméables et trenchs. | Wool, cashmere, down jackets, raincoats and trench coats. | |
+| `pages.pressing.list.3.title` | Linge de maison | Household linen | |
+| `pages.pressing.list.3.text` | Couettes, couvertures, plaids, nappes et rideaux. | Duvets, blankets, throws, tablecloths and curtains. | |
+| `pages.pressing.howTitle` | Comment ça se passe | How it works | |
+| `pages.pressing.how.0.title` | Vous déposez au comptoir | Drop off at the counter | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.how.0.text` | On regarde le vêtement avec vous : la matière, l’étiquette d’entretien, une éventuelle tache. | We look at the garment with you: the fabric, the care label, any stain. | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.how.1.title` | Prix et date annoncés | Price and date given | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.how.1.text` | Le tarif et la date de retrait sont notés sur votre ticket, sans surprise. | The price and your ready date are written on your ticket, no surprises. | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.how.2.title` | Vous le reprenez prêt à porter | Collect it ready to wear | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.how.2.text` | Nettoyé, repassé, sur cintre et sous housse ou plié selon l’article. | Cleaned, pressed, on a hanger in a cover or folded, depending on the item. | **à valider (rendu sur cintre, sous housse)** |
+| `pages.pressing.related` | Une pièce particulière, en cuir, en daim ou une robe de soirée ? Envoyez une photo, le pressing vous répond avec un prix et un délai. | A special piece, in leather or suede, or an evening dress? Send a photo and we will reply with a price and a turnaround time. | |
+| `pages.mariee.metaTitle` | Nettoyage de robe de mariée à Amiens | Teinturerie des Jacobins | Wedding dress cleaning in Amiens | Teinturerie des Jacobins | **à valider (prestations robe de mariée)** |
+| `pages.mariee.metaDescription` | Nettoyage et détachage de robe de mariée à Amiens, centre-ville : satin, tulle, dentelle, broderies. Devis sur photo avant dépôt. Teinturerie des Jacobins, 47 rue des Jacobins. | Wedding dress cleaning and stain removal in Amiens city centre: satin, tulle, lace, embroidery. Quote from a photo before drop-off. Teinturerie des Jacobins, 47 rue des Jacobins. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.eyebrow` | Robe de mariée · Amiens | Wedding dress · Amiens | **à valider (prestations robe de mariée)** |
+| `pages.mariee.title` | Nettoyage de robe de mariée à Amiens | Wedding dress cleaning in Amiens | **à valider (prestations robe de mariée)** |
+| `pages.mariee.intro` | Après la fête, la traîne a vu l’herbe, la piste de danse et quelques verres de champagne. Confiez votre robe à un pressing qui prend le temps de la regarder, et recevez un devis avant de la déposer. | After the party, the train has met the grass, the dance floor and a few glasses of champagne. Trust your dress to a dry cleaner who takes the time to look at it, and get a quote before you drop it off. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.cta` | Demander un devis | Request a quote | **à valider (prestations robe de mariée)** |
+| `pages.mariee.listTitle` | Ce que nous prenons en charge | What we take care of | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.0.title` | Le nettoyage | Cleaning | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.0.text` | Selon le tissu : satin, tulle, mousseline, dentelle, crêpe. | Suited to the fabric: satin, tulle, chiffon, lace, crêpe. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.1.title` | Le détachage | Stain removal | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.1.text` | Traîne, ourlet, taches de vin, de maquillage ou d’herbe. | Train, hem, wine, make-up or grass stains. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.2.title` | Les détails fragiles | Fragile details | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.2.text` | Broderies, perles, sequins et boutons sont vérifiés avant de commencer. | Embroidery, beads, sequins and buttons are checked before we start. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.3.title` | Les robes du cortège | Wedding party outfits | **à valider (prestations robe de mariée)** |
+| `pages.mariee.list.3.text` | Robes de soirée, de cérémonie, costumes des témoins. | Bridesmaid and evening dresses, the best men’s suits. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.howTitle` | Les bons réflexes | Good habits | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.0.title` | Apportez-la vite | Bring it in soon | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.0.text` | Les taches de sucre ou de champagne, invisibles au début, jaunissent avec le temps. Mieux vaut ne pas attendre des mois. | Sugar or champagne stains, invisible at first, turn yellow over time. Better not to wait for months. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.1.title` | Envoyez une photo | Send a photo | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.1.text` | La robe en entier, les taches de près et l’étiquette : le pressing vous dit ce qui est possible. | The whole dress, the stains up close and the label: we tell you what can be done. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.2.title` | Un devis avant le dépôt | A quote before drop-off | **à valider (prestations robe de mariée)** |
+| `pages.mariee.how.2.text` | Le prix et le délai vous sont donnés avant que vous ne confiiez la robe. | You get the price and the turnaround time before you hand over the dress. | **à valider (prestations robe de mariée)** |
+| `pages.mariee.related` | Robe de cortège, costume du marié ou tenue de cérémonie : envoyez une photo avec le formulaire de devis, vous obtenez un prix et un délai. | Bridesmaid dress, groom’s suit or ceremony outfit: send a photo through the quote form and get a price and a turnaround time. | **à valider (prestations robe de mariée)** |
 
 ### legal
 
 | Clé | Français | English | |
 |---|---|---|---|
-| `legal.metaTitle` | Mentions légales | Cordonnerie Henriville | Legal notice | Cordonnerie Henriville | |
+| `legal.metaTitle` | Mentions légales | Teinturerie des Jacobins | Legal notice | Teinturerie des Jacobins | |
 | `legal.title` | Mentions légales | Legal notice | |
 | `legal.editor` | Éditeur | Publisher | |
-| `legal.editorText` | {company}, 34 rue Gaulthier de Rumilly, 80000 Amiens. Téléphone : 03 22 95 65 63. | {company}, 34 rue Gaulthier de Rumilly, 80000 Amiens, France. Phone: +33 3 22 95 65 63. | |
+| `legal.editorText` | {company}, 47 rue des Jacobins, 80000 Amiens. Téléphone : 03 22 91 77 93. | {company}, 47 rue des Jacobins, 80000 Amiens, France. Phone: +33 3 22 91 77 93. | |
 | `legal.siret` | SIRET : {siret}. | SIRET: {siret}. | |
-| `legal.director` | Responsable de la publication : {director}. | Publication manager: {director}. | |
+| `legal.toFill` | à compléter | to be completed | |
+| `legal.director` | Responsable de la publication : {director}. | Publication director: {director}. | |
 | `legal.host` | Hébergeur | Hosting | |
 | `legal.data` | Données personnelles | Personal data | |
-| `legal.dataText` | Les informations envoyées par le formulaire de devis (nom, téléphone, e-mail, photos, message) servent uniquement à répondre à votre demande. Elles sont transmises par e-mail à l’atelier et ne sont pas conservées sur le site. Vous pouvez demander leur suppression en appelant l’atelier. | Information sent through the quote form (name, phone, email, photos, message) is only used to reply to your request. It is emailed to the workshop and not stored on the website. You can ask for it to be deleted by calling the workshop. | |
+| `legal.dataText` | Les informations envoyées par le formulaire de devis (nom, téléphone, e-mail, photos, message) servent uniquement à répondre à votre demande. Elles sont transmises par e-mail au pressing et ne sont pas conservées sur le site. Vous pouvez demander leur suppression en appelant le pressing. | The information sent through the quote form (name, phone, email, photos, message) is only used to reply to your request. It is emailed to the shop and not stored on the website. You can ask for it to be deleted by calling the shop. | |
 | `legal.photos` | Photos | Photos | |
-| `legal.photosText` | Photos de l’atelier : Cordonnerie Henriville. Photo de teinture du sac : {credit}. Aucune image de banque d’images ni générée par intelligence artificielle. | Workshop photos: Cordonnerie Henriville. Bag dyeing photo: {credit}. No stock images and no AI-generated images. | |
+| `legal.photosText` | Les photos du site sont celles de la Teinturerie des Jacobins. Aucune image de banque d’images ni générée par intelligence artificielle. | The photos on this website are those of Teinturerie des Jacobins. No stock images and no AI-generated images. | |
 | `legal.cookies` | Cookies | Cookies | |
-| `legal.cookiesText` | Le site n’utilise aucun cookie publicitaire ni de mesure d’audience. Seul votre choix de langue est mémorisé. La carte est fournie par Google Maps. | This website uses no advertising or analytics cookies. Only your language choice is remembered. The map is provided by Google Maps. | |
+| `legal.cookiesText` | Le site n’utilise aucun cookie publicitaire ni de mesure d’audience. Seuls votre choix de langue et la fermeture du bandeau sont mémorisés. La carte est fournie par Google Maps. | This website uses no advertising or analytics cookies. Only your language choice and the closed banner are remembered. The map is provided by Google Maps. | |
 
 ## Textes alternatifs des photos
 
 | Photo | Français | English |
 |---|---|---|
-| mains-ponceuse-mocassin | Les mains du cordonnier tiennent un mocassin noir contre la ponceuse de finition de l’atelier | The shoemaker's hands holding a black loafer against the workshop's finishing wheel |
-| teinture-sac-cuir-rouge | Le cordonnier, gants noirs, teint à la main un sac en cuir rouge | The shoemaker, in black gloves, hand-dyeing a red leather bag |
+| facade-rue-des-jacobins | La devanture de la Teinturerie des Jacobins, au 47 rue des Jacobins à Amiens | The shopfront of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens |
+| comptoir | Le comptoir de la Teinturerie des Jacobins, avec les vêtements prêts sur le portant | The counter at Teinturerie des Jacobins, with finished garments on the rail |
+| portant-costumes | Des costumes nettoyés, sous housse, sur le portant du pressing | Cleaned suits in garment covers on the dry cleaner’s rail |
+| repassage-chemise | Une chemise blanche sur la table de repassage du pressing | A white shirt on the dry cleaner’s pressing table |
+| detachage | Le poste de détachage du pressing, avec une tache traitée sur un tissu clair | The stain removal station, with a stain being treated on a light fabric |
+| robe-mariee | Une robe de mariée nettoyée, sur son cintre, prête à être rendue | A cleaned wedding dress on its hanger, ready to be collected |
+| equipe | L’équipe de la Teinturerie des Jacobins au comptoir | The Teinturerie des Jacobins team at the counter |

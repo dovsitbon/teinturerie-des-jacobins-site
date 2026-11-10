@@ -1,14 +1,22 @@
-# Cordonnerie Henriville
+# Teinturerie des Jacobins
 
-Site vitrine et demande de devis de la Cordonnerie Henriville, maître artisan cordonnier, 34 rue Gaulthier de Rumilly, Amiens. Next.js 16, Tailwind 4, Motion. Français (défaut) et anglais, URLs `/fr` et `/en`.
+Site vitrine et demande de devis du pressing Teinturerie des Jacobins, 47 rue des Jacobins, Amiens. Next.js 16, Tailwind 4, Motion. Français (par défaut) et anglais, URLs `/fr` et `/en`.
 
-- `npm run dev` : développement
-- `npm run media` : prépare les photos (`assets/` → `public/media/`, `data/media-sizes.json`, `public/og.jpg`)
-- `npm run affichette` : affichette A5 avec QR code (`public/affichette-cordonnerie-henriville-a5.pdf`)
-- `npm run contenu` : régénère `CONTENU.md`
+## Modifier le contenu
 
-Données à tenir à jour : `data/tarifs.json`, `data/horaires.json`, `data/annonces.json`, `data/photos.json`, `data/avant-apres.json`, `data/site.json`. Textes : `locales/fr.json`, `locales/en.json`.
+- Textes : `locales/fr.json`, `locales/en.json` (relecture : `CONTENU.md`, régénéré par `npm run contenu`)
+- Tarifs et délais : `data/tarifs.json` (prix `null` = « sur demande »)
+- Horaires et fermetures : `data/horaires.json` ; bandeau : `data/annonces.json`
+- Photos : `data/photos.json` + `scripts/media.mjs` (`npm run media`), liste dans `assets/A-PHOTOGRAPHIER.md`
+- Avis : `data/avis.json` (vrais avis uniquement)
+- Coordonnées, note Google, mentions légales : `data/site.json`
 
-Devis (Resend) : variables Vercel `RESEND_API_KEY`, `DEVIS_NOTIFY_EMAIL`, `RESEND_FROM`. Sans elles, le formulaire fonctionne mais invite le client à appeler.
+## Devis par e-mail (Resend)
 
-Voir `INFOS-A-DEMANDER.md` et `assets/A-PHOTOGRAPHIER.md`.
+Variables Vercel : `RESEND_API_KEY`, `DEVIS_NOTIFY_EMAIL`, `RESEND_FROM`. Sans elles, le formulaire invite le client à appeler.
+
+## Commandes
+
+`npm run dev` · `npm run build` · `npm run media` · `npm run affichette` (PDF A5 avec QR code) · `npm run contenu`
+
+Infos à obtenir du pressing : `INFOS-A-DEMANDER.md`.

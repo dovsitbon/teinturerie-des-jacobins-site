@@ -8,7 +8,8 @@ import { Providers } from "@/components/providers";
 import { Header, MobileBar } from "@/components/Header";
 import { AnnounceBar } from "@/components/AnnounceBar";
 import { Footer } from "@/components/Footer";
-import { Intro, INTRO_KEY } from "@/components/Intro";
+import { Intro } from "@/components/Intro";
+import { INTRO_KEY } from "@/lib/intro";
 import { SmoothScroll } from "@/components/SmoothScroll";
 import { businessJsonLd } from "@/lib/jsonld";
 

@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type CSSProperties } from "react";
 
-export const INTRO_KEY = "teinturerie-des-jacobins-intro";
+import { INTRO_KEY } from "@/lib/intro";
 const at = (d: number) => ({ "--d": `${d}s` }) as CSSProperties;
 
 // Cintre (crochet + corps) et chemise, viewBox 120 × 104. Les épaules de la chemise suivent la pente du cintre.

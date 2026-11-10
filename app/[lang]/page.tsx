@@ -234,7 +234,7 @@ function Feature({ id, eyebrow, title, text, cta, to, media, flip = false }: { i
 
 function Features({ lang, d }: { lang: Locale; d: Dict }) {
   const b = d.blocks;
-  const box = (src: string | null) => (src ? "aspect-[4/5] md:aspect-[5/6]" : "aspect-[4/3] md:aspect-[5/6]");
+  const box = (src: string | null) => (src ? "aspect-[4/5] md:aspect-[5/6]" : "aspect-[4/3]");
   return (
     <div className="py-6 lg:py-10">
       <Feature id="delicats" {...b.delicats} to={href(lang, "home", "tarifs")} media={<Slot src={slot("delicats")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("delicats"))} icon={<SuitIcon className="size-16" />} label={b.delicats.slot} />} />
@@ -254,7 +254,7 @@ function Reviews({ lang, d }: { lang: Locale; d: Dict }) {
     <section aria-labelledby="reviews-title" className="mx-auto max-w-[90rem] px-5 py-20 sm:px-8 lg:px-10 lg:py-24">
       <div className="grid gap-10 border-y border-line py-12 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-20">
         <Reveal className="flex items-end gap-5">
-          <p className="display text-[clamp(4.5rem,9vw,6.5rem)] leading-[0.8]">{value}</p>
+          <p className="display text-[clamp(3.2rem,6vw,4.4rem)] leading-[0.8]">{value}</p>
           <div className="pb-1">
             <Stars value={site.rating.value} className="size-4" />
             <p className="mt-2 text-[0.875rem] text-muted">{fill(r.count, { count: site.rating.count })}</p>

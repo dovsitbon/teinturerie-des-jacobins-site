@@ -1,26 +1,21 @@
-# Cordonnerie Henriville : infos à demander à l'atelier
+# Teinturerie des Jacobins : infos à demander au pressing
 
-Le site est en ligne avec ce qu'on sait de façon sûre (adresse, téléphone, horaires de la bio Instagram, note Google). Tout le reste est à valider ou à compléter avec lui. Une fois les réponses obtenues, les corrections se font dans `data/*.json` et `locales/*.json` (voir CONTENU.md).
-
-## Ce qu'on a trouvé (registres publics, à confirmer avec lui)
-
-- Société : SARL Cordonnerie Henriville, SIRET 837 960 087 00018 (annuaire-entreprises.data.gouv.fr). **Ajouté aux mentions légales.**
-- Dirigeant : Christophe Audegond (societe.com). Mis en « responsable de la publication » : **à confirmer**, et à ne pas afficher ailleurs sans son accord.
-- Ancien nom : Cordonnerie Morchain (page Facebook @cordonnerie.morchain, 2 500 abonnés, toujours liée au site).
-- La photo du sac rouge est signée @lou.au2gd : signature recadrée, crédit en mentions légales. **Lui demander l'accord du photographe.**
+Le site est en ligne avec ce qu'on sait de façon sûre : nom, adresse (47 rue des Jacobins, 80000 Amiens), téléphone fixe (03 22 91 77 93), catégorie Google « Pressing » et note Google (3,4/5 sur 37 avis, relevée le 10 novembre 2026). Aucune information publique trouvée en ligne sur la société (ni site, ni réseaux, ni registre retrouvé sous ce nom). Tout le reste est à valider ou à compléter avec lui. Les corrections se font dans `data/*.json` et `locales/*.json` (voir CONTENU.md).
 
 ## À lui demander
 
-1. **Son prénom et son parcours** : Maître Artisan depuis quand, formation, années de métier, depuis quand à Henriville. (Bloc « Le métier », pour l'instant générique.)
-2. **La liste exacte des services et les prix « à partir de »** : `data/tarifs.json` (tous les prix sont vides, affichés « sur devis »).
-3. **La serrurerie** : cylindres (fourniture seule ou pose ?), ouverture de porte (oui / non), serrures de boîte aux lettres, coffres, cadenas. Les deux lignes actuelles sont marquées « à confirmer ».
-4. **Les clés** : quelles marques de sécurité (Fichet, Vachette, Bricard…), clés de voiture (avec ou sans transpondeur, télécommandes ?), badges (Vigik ?).
-5. **Les délais réels** par prestation (`data/tarifs.json`, champ delay).
-6. **Devis gratuit ?** Le site l'annonce : à confirmer.
-7. **Moyens de paiement** (le site dit espèces et carte), et **combien de temps il garde les objets oubliés**.
-8. **Un portable pour WhatsApp** : si oui, renseigner `whatsapp` dans `data/site.json` (bouton à ajouter, pratique pour l'envoi de photos).
-9. **L'e-mail de l'atelier** pour recevoir les devis : à mettre dans Vercel (`DEVIS_NOTIFY_EMAIL`) avec la clé Resend (`RESEND_API_KEY`, `RESEND_FROM`). Tant que ce n'est pas fait, le formulaire invite à appeler.
-10. **Photos** : atelier, mains au travail, établi et outils, machine à clés, vitrine / façade, avant / après (chaussures et sacs, même cadrage). Liste détaillée : `assets/A-PHOTOGRAPHIER.md`.
-11. **Le logo** : a-t-il un logo ou une enseigne dessinée ? Sinon, valider le logo typographique (marteau et clé croisés).
-12. **Accès et stationnement** (texte « Accès » à valider), et ses **fermetures de l'année** (congés, ponts) pour le bandeau.
-13. **Nom de domaine** : en a-t-il un, ou faut-il en prendre un (cordonnerie-henriville.fr est un bon candidat) ?
+1. **Son prénom et l'histoire du pressing** : depuis quand rue des Jacobins, reprise d'une ancienne teinturerie ? (Pour un bloc « La maison », pas encore écrit faute d'infos.)
+2. **La liste des services et les prix « à partir de »** : `data/tarifs.json`. Tous les prix sont vides et affichés « sur demande ». C'est la priorité : le site est construit pour rassurer par des prix affichés.
+3. **Les délais réels** par article (`delay` dans `data/tarifs.json`) : les valeurs actuelles sont des ordres de grandeur à confirmer. Fait-il de l'express (dans la journée) ?
+4. **Cuir et daim** : les traite-t-il sur place, les confie-t-il à un spécialiste, ou pas du tout ? (Marqué « à confirmer ».)
+5. **Robe de mariée** : nettoyage sur place ou sous-traité, délai, mise en boîte de conservation ?
+6. **Les horaires exacts** : le site affiche du lundi au samedi, 9 h – 19 h, sans coupure le midi (`data/horaires.json`), plus ses fermetures de l'année (congés, ponts) pour le bandeau (`data/annonces.json`).
+7. **Un portable pour WhatsApp** : si oui, renseigner `whatsapp` dans `data/site.json` (format 336XXXXXXXX). Pratique pour envoyer la photo d'une tache.
+8. **L'e-mail du pressing** pour recevoir les demandes de devis : à mettre dans Vercel (`DEVIS_NOTIFY_EMAIL`) avec une clé Resend (`RESEND_API_KEY`, `RESEND_FROM`). Tant que ce n'est pas fait, le formulaire fonctionne mais invite le client à appeler.
+9. **Les moyens de paiement** (le site dit espèces et carte) et **le devis gratuit** (annoncé : à confirmer).
+10. **Des photos de la boutique** : façade, comptoir, portants, vêtements prêts, robe de mariée, détachage. Liste détaillée : `assets/A-PHOTOGRAPHIER.md`.
+11. **Le logo** : a-t-il une enseigne ou un logo dessiné ? Sinon, valider le logo typographique (cintre et goutte au trait).
+12. **SIRET, forme de la société, nom du responsable** pour les mentions légales (`data/site.json` → `legal`).
+13. **Accès et stationnement** : le texte actuel est général (stationnement payant, parkings du centre). Un parking précis à citer ?
+14. **Les avis** : peut-on reprendre quelques avis Google, avec l'accord de leurs auteurs ? (`data/avis.json`, vide pour l'instant.)
+15. **Nom de domaine** : en a-t-il un, ou faut-il en prendre un (teinturerie-des-jacobins.fr par exemple) ?
