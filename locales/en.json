@@ -1,0 +1,309 @@
+{
+  "meta": {
+    "title": "Dry cleaner in Amiens city centre | Teinturerie des Jacobins",
+    "description": "Teinturerie des Jacobins, dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, wedding dresses, duvets and stain removal. Prices and turnaround shown upfront, quotes from a photo. Monday to Saturday.",
+    "ogAlt": "Teinturerie des Jacobins, dry cleaner at 47 rue des Jacobins, Amiens city centre"
+  },
+  "nav": {
+    "services": "Services",
+    "tarifs": "Prices & times",
+    "infos": "Info",
+    "devis": "Request a quote",
+    "devisShort": "Quote",
+    "call": "Call",
+    "menu": "Menu",
+    "close": "Close menu",
+    "home": "Teinturerie des Jacobins, home",
+    "lang": "Language",
+    "skip": "Skip to content"
+  },
+  "intro": {
+    "skip": "Skip"
+  },
+  "announce": {
+    "close": "Close banner"
+  },
+  "status": {
+    "open": "Open now",
+    "closed": "Closed",
+    "until": "until {time}",
+    "reopens": "opens {day} at {time}",
+    "today": "today",
+    "tomorrow": "tomorrow"
+  },
+  "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "hours": {
+    "range": "{from} to {to}",
+    "single": "{day}",
+    "closedOn": "Closed on"
+  },
+  "rating": {
+    "label": "{value}/5 on Google",
+    "count": "{count} reviews",
+    "asOf": "Rating as of {date}"
+  },
+  "hero": {
+    "eyebrow": "Dry cleaning · Dyeing · Rue des Jacobins, Amiens",
+    "title": "Your clothes <em>in good hands</em>",
+    "lead": "Shirts, suits, coats, wedding dresses, duvets: your city-centre dry cleaner cleans, removes stains and presses, with the price and the ready date given before you drop off.",
+    "devis": "Request a quote",
+    "tarifs": "See prices"
+  },
+  "tiles": {
+    "eyebrow": "Our services",
+    "title": "What you can bring us",
+    "lead": "For each type of garment, the starting price and the usual turnaround. Full details are in the price list.",
+    "from": "from {price}",
+    "onQuote": "Price on request",
+    "items": {
+      "chemises": { "title": "Shirts", "text": "Washed, pressed, returned on a hanger or folded. Blouses, jumpers and cardigans too." },
+      "costumes": { "title": "Suits", "text": "Two or three-piece suits, jackets, trousers, ties: cleaned and pressed, ready to wear." },
+      "manteaux": { "title": "Coats", "text": "Wool, cashmere, down jackets, trench coats: cleaning that respects the fabric and the cut." },
+      "robes": { "title": "Dresses & wedding dresses", "text": "Everyday, evening and occasion dresses, and your wedding dress after the big day." },
+      "cuir": { "title": "Leather & suede", "text": "Leather, suede or nubuck jackets and coats. Service to be confirmed in store." },
+      "linge": { "title": "Household linen & duvets", "text": "Duvets, blankets, throws, tablecloths, curtains: everything too big for your machine." }
+    }
+  },
+  "strip": {
+    "label": "At a glance",
+    "items": [
+      { "title": "Prices shown", "text": "The price of every item, before you even walk in." },
+      { "title": "Clear turnaround", "text": "Your ready date is written on your ticket." },
+      { "title": "Stain removal", "text": "A stubborn stain? Send us a photo first." },
+      { "title": "City centre", "text": "Rue des Jacobins, Monday to Saturday." }
+    ]
+  },
+  "tarifs": {
+    "eyebrow": "Prices & turnaround",
+    "title": "The price and the time, before you drop off",
+    "lead": "Prices are “from” prices: the fabric, the lining or a particular stain can change the cost. If so, you are told at the counter, before any work starts.",
+    "promises": [
+      "The price is confirmed at drop-off, nothing is added at collection.",
+      "Your ready date is written on your ticket.",
+      "For a delicate piece or a stain, a quote from a photo."
+    ],
+    "note": "Turnaround times are a guide, excluding Sundays and public holidays, and depend on how busy we are. Any price not shown is given at the counter or over the phone.",
+    "head": { "service": "Item", "price": "Guide price", "delay": "Turnaround" },
+    "from": "from {price}",
+    "onQuote": "on request",
+    "confirm": "to be confirmed",
+    "ask": "Request a quote"
+  },
+  "blocks": {
+    "delicats": {
+      "eyebrow": "Delicate pieces",
+      "title": "Wool, silk, cashmere: every fabric gets its own care",
+      "text": "Before cleaning, we read the care label and check the fabric, the lining and the buttons. A suit comes back crease-free and ready to wear, a wool coat keeps its shape, a silk blouse is handled separately.",
+      "cta": "See prices",
+      "slot": "Suits and coats"
+    },
+    "detachage": {
+      "eyebrow": "Stain removal",
+      "title": "A stain? Send us a photo first",
+      "text": "Wine, coffee, grease, make-up, ink: every stain is treated differently, depending on what it is, how old it is and the fabric. With a photo, we can tell you what can be done and at what price, before you make the trip.",
+      "cta": "Request a quote",
+      "slot": "The stain, in a photo"
+    },
+    "mariee": {
+      "eyebrow": "Wedding dress",
+      "title": "After the big day, a clean dress, carefully put away",
+      "text": "A train marked by the grass, a dusty hem, a few drops of champagne: a wedding dress needs careful cleaning, lace, embroidery and beads included. Describe it or send a photo and you get a quote before you hand it over.",
+      "cta": "Request a quote",
+      "slot": "Wedding dress"
+    }
+  },
+  "reviews": {
+    "eyebrow": "Google reviews",
+    "title": "Your feedback helps us improve",
+    "lead": "We read every review. That is why prices and turnaround times are listed here, item by item, before you even walk in.",
+    "count": "{count} Google reviews",
+    "cta": "Read the reviews on Google"
+  },
+  "cta": {
+    "title": "A question about a garment?",
+    "text": "Send a photo or call us: you get a price and a turnaround time before making the trip."
+  },
+  "infos": {
+    "eyebrow": "Practical info",
+    "title": "Visit us",
+    "address": "Address",
+    "route": "Directions",
+    "phone": "Phone",
+    "hours": "Opening hours",
+    "closedDay": "Closed",
+    "closures": "Upcoming closures",
+    "access": "Getting here & parking",
+    "accessText": "Right in Amiens city centre, on rue des Jacobins, a few steps from the Comédie de Picardie theatre. Paid parking on the street and nearby streets, city-centre car parks a few minutes’ walk away.",
+    "mapTitle": "Map to Teinturerie des Jacobins, 47 rue des Jacobins, Amiens"
+  },
+  "faq": {
+    "eyebrow": "Frequently asked questions",
+    "title": "Before you come",
+    "items": [
+      { "q": "What are your opening hours?", "a": "We are open Monday to Saturday, 9am to 7pm. You can drop off and collect without an appointment." },
+      { "q": "How long until my clothes are ready?", "a": "It depends on the item: usually 24 to 48 hours for a shirt, a few days for a coat or a duvet, and a quoted time for a wedding dress. The price list gives the turnaround for each item, and your ready date is written on your ticket." },
+      { "q": "How can I know the price before dropping off?", "a": "Starting prices are listed in the price table. For a particular piece or a stain, send 1 to 3 photos through the quote form, or come to the counter: you get the price before any work starts." },
+      { "q": "Do all stains come out?", "a": "Most do, especially fresh ones. Some old stains or fragile fabrics will not give a perfect result: we tell you honestly beforehand. In the meantime, don’t rub or iron a stain, and bring the garment in as soon as you can." },
+      { "q": "How can I pay?", "a": "You pay when you collect your clothes, in cash or by card." },
+      { "q": "Where can I park to drop off my clothes?", "a": "We are on rue des Jacobins, right in the city centre. There is paid parking on the street and nearby streets, and several city-centre car parks a few minutes’ walk away." }
+    ]
+  },
+  "footer": {
+    "tagline": "Dry cleaning and dyeing in Amiens city centre: shirts, suits, coats, wedding dresses, household linen and stain removal.",
+    "contact": "The shop",
+    "pages": "Pages",
+    "rights": "Teinturerie des Jacobins, Amiens",
+    "legal": "Legal notice",
+    "logoTitle": "Teinturerie des Jacobins, dry cleaner in Amiens"
+  },
+  "slots": {
+    "boutique": "The shop"
+  },
+  "devis": {
+    "metaTitle": "Request a dry cleaning quote in Amiens | Teinturerie des Jacobins",
+    "metaDescription": "Send 1 to 3 photos of your garment or the stain: Teinturerie des Jacobins replies with a price and a turnaround time. Dry cleaner in Amiens city centre.",
+    "eyebrow": "Free quote",
+    "title": "Request a quote",
+    "lead": "Describe the garment and attach 1 to 3 photos, especially for a stain. We reply with a price and a turnaround time. Nothing is agreed without your go-ahead.",
+    "preferCall": "Easier by phone?",
+    "sections": {
+      "object": "The garment",
+      "repair": "The stain or what you need",
+      "photos": "Photos",
+      "delay": "When you need it",
+      "contact": "Your details"
+    },
+    "fields": {
+      "objects": { "chemise": "Shirt", "costume": "Suit", "manteau": "Coat, down jacket", "robe": "Dress", "mariee": "Wedding dress", "cuir": "Leather, suede", "linge": "Linen, duvet", "autre": "Other" },
+      "repairsLabel": "What you need",
+      "repairsHint": "choose as many as you like",
+      "repair": "Describe the stain or what you need",
+      "repairPh": "E.g. wine stain on the sleeve, a week old; silk dress; suit needed by Saturday…",
+      "photos": "Add photos",
+      "photosHint": "1 to 3 photos: the whole garment, the stain up close, and the care label if possible.",
+      "photoRemove": "Remove photo",
+      "photosCount": "{count}/3",
+      "delays": { "pas-presse": "No rush", "semaine": "Within the week", "urgent": "As soon as possible", "date": "By a specific date:" },
+      "date": "Date needed",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "emailHint": "(to receive a confirmation)",
+      "message": "Message",
+      "messagePh": "Any detail, a question, the brand or fabric of the garment…"
+    },
+    "repairs": {
+      "nettoyage": "Cleaning",
+      "repassage": "Pressing",
+      "detachage": "Stain removal"
+    },
+    "errors": {
+      "object": "Choose the type of garment.",
+      "repair": "Tell us what needs doing (tick a box or write a few words).",
+      "name": "Please enter your name.",
+      "phone": "Please enter a valid phone number.",
+      "email": "This email address doesn’t look valid.",
+      "photo": "This photo couldn’t be read. Try another image.",
+      "generic": "Sending failed. Please try again, or call us on +33 3 22 91 77 93."
+    },
+    "submit": "Send request",
+    "sending": "Sending…",
+    "privacy": "Your details are only used to reply to this request. They are never sold or used for advertising.",
+    "success": {
+      "title": "Request received",
+      "text": "We will look at your request and reply with a price and a turnaround time.",
+      "email": "A summary has just been sent to your email.",
+      "notNotified": "To make sure we received it, please call us directly:",
+      "again": "Make another request"
+    },
+    "message": {
+      "title": "New quote request",
+      "object": "Garment",
+      "repairs": "Needs",
+      "repair": "Details",
+      "delay": "Needed",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "message": "Message",
+      "photos": "Photos attached"
+    },
+    "email": {
+      "subject": "Quote request",
+      "confirmSubject": "Your quote request, Teinturerie des Jacobins",
+      "confirmIntro": "Hello {name},\n\nThank you for your request. Here is what we received:",
+      "confirmOutro": "We will get back to you with a price and a turnaround time. Any question: {phone}, {hours}.\n\nTeinturerie des Jacobins\n47 rue des Jacobins, 80000 Amiens, France"
+    }
+  },
+  "pages": {
+    "pressing": {
+      "metaTitle": "Dry cleaner in Amiens city centre: shirts, suits, coats | Teinturerie des Jacobins",
+      "metaDescription": "Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday, 9am to 7pm.",
+      "eyebrow": "Dry cleaning · Amiens city centre",
+      "title": "Dry cleaner in Amiens",
+      "intro": "A shirt for Monday, a suit for a wedding, the winter coat to freshen up: drop them off on rue des Jacobins, right in the city centre. You get the price and the ready date at the counter.",
+      "cta": "Request a quote",
+      "listTitle": "What we clean",
+      "list": [
+        { "title": "Shirts and tops", "text": "Washed and pressed, returned on a hanger or folded, blouses and jumpers included." },
+        { "title": "Suits", "text": "Jackets, trousers, two or three-piece suits, ties." },
+        { "title": "Coats", "text": "Wool, cashmere, down jackets, raincoats and trench coats." },
+        { "title": "Household linen", "text": "Duvets, blankets, throws, tablecloths and curtains." }
+      ],
+      "howTitle": "How it works",
+      "how": [
+        { "title": "Drop off at the counter", "text": "We look at the garment with you: the fabric, the care label, any stain." },
+        { "title": "Price and date given", "text": "The price and your ready date are written on your ticket, no surprises." },
+        { "title": "Collect it ready to wear", "text": "Cleaned, pressed, on a hanger in a cover or folded, depending on the item." }
+      ],
+      "related": "A special piece, in leather or suede, or an evening dress? Send a photo and we will reply with a price and a turnaround time."
+    },
+    "mariee": {
+      "metaTitle": "Wedding dress cleaning in Amiens | Teinturerie des Jacobins",
+      "metaDescription": "Wedding dress cleaning and stain removal in Amiens city centre: satin, tulle, lace, embroidery. Quote from a photo before drop-off. Teinturerie des Jacobins, 47 rue des Jacobins.",
+      "eyebrow": "Wedding dress · Amiens",
+      "title": "Wedding dress cleaning in Amiens",
+      "intro": "After the party, the train has met the grass, the dance floor and a few glasses of champagne. Trust your dress to a dry cleaner who takes the time to look at it, and get a quote before you drop it off.",
+      "cta": "Request a quote",
+      "listTitle": "What we take care of",
+      "list": [
+        { "title": "Cleaning", "text": "Suited to the fabric: satin, tulle, chiffon, lace, crêpe." },
+        { "title": "Stain removal", "text": "Train, hem, wine, make-up or grass stains." },
+        { "title": "Fragile details", "text": "Embroidery, beads, sequins and buttons are checked before we start." },
+        { "title": "Wedding party outfits", "text": "Bridesmaid and evening dresses, the best men’s suits." }
+      ],
+      "howTitle": "Good habits",
+      "how": [
+        { "title": "Bring it in soon", "text": "Sugar or champagne stains, invisible at first, turn yellow over time. Better not to wait for months." },
+        { "title": "Send a photo", "text": "The whole dress, the stains up close and the label: we tell you what can be done." },
+        { "title": "A quote before drop-off", "text": "You get the price and the turnaround time before you hand over the dress." }
+      ],
+      "related": "Bridesmaid dress, groom’s suit or ceremony outfit: send a photo through the quote form and get a price and a turnaround time."
+    }
+  },
+  "legal": {
+    "metaTitle": "Legal notice | Teinturerie des Jacobins",
+    "title": "Legal notice",
+    "editor": "Publisher",
+    "editorText": "{company}, 47 rue des Jacobins, 80000 Amiens, France. Phone: +33 3 22 91 77 93.",
+    "siret": "SIRET: {siret}.",
+    "toFill": "to be completed",
+    "director": "Publication director: {director}.",
+    "host": "Hosting",
+    "data": "Personal data",
+    "dataText": "The information sent through the quote form (name, phone, email, photos, message) is only used to reply to your request. It is emailed to the shop and not stored on the website. You can ask for it to be deleted by calling the shop.",
+    "photos": "Photos",
+    "photosText": "The photos on this website are those of Teinturerie des Jacobins. No stock images and no AI-generated images.",
+    "cookies": "Cookies",
+    "cookiesText": "This website uses no advertising or analytics cookies. Only your language choice and the closed banner are remembered. The map is provided by Google Maps."
+  },
+  "alt": {
+    "facade-rue-des-jacobins": "The shopfront of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens",
+    "comptoir": "The counter at Teinturerie des Jacobins, with finished garments on the rail",
+    "portant-costumes": "Cleaned suits in garment covers on the dry cleaner’s rail",
+    "repassage-chemise": "A white shirt on the dry cleaner’s pressing table",
+    "detachage": "The stain removal station, with a stain being treated on a light fabric",
+    "robe-mariee": "A cleaned wedding dress on its hanger, ready to be collected",
+    "equipe": "The Teinturerie des Jacobins team at the counter"
+  }
+}

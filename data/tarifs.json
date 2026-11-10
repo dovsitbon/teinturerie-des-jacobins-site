@@ -1,0 +1,74 @@
+{
+  "_note": "Tarifs et délais affichés sur le site (tableau, tuiles, pages SEO, données structurées). price : prix « à partir de » en euros (ex. 4.5), ou null (affiché « sur demande »). from: false si le prix est fixe (affiché sans « à partir de »). delay : délai indicatif dans les deux langues, ou null. confirm: true = prestation à confirmer avec le pressing. TOUT EST À REMPLIR / VALIDER : aucun prix n'a été inventé, les délais sont des ordres de grandeur à confirmer.",
+  "categories": [
+    {
+      "id": "chemises",
+      "name": { "fr": "Chemises & hauts", "en": "Shirts & tops" },
+      "items": [
+        { "id": "chemise", "name": { "fr": "Chemise, lavée et repassée", "en": "Shirt, washed and pressed" }, "price": null, "delay": { "fr": "24 à 48 h", "en": "24 to 48 hours" } },
+        { "id": "chemise-pliee", "name": { "fr": "Chemise, rendue pliée", "en": "Shirt, returned folded" }, "price": null, "delay": { "fr": "24 à 48 h", "en": "24 to 48 hours" } },
+        { "id": "chemisier", "name": { "fr": "Chemisier, blouse", "en": "Blouse" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } },
+        { "id": "pull", "name": { "fr": "Pull, gilet", "en": "Jumper, cardigan" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } }
+      ]
+    },
+    {
+      "id": "costumes",
+      "name": { "fr": "Costumes", "en": "Suits" },
+      "items": [
+        { "id": "costume-2", "name": { "fr": "Costume deux pièces", "en": "Two-piece suit" }, "price": null, "delay": { "fr": "48 à 72 h", "en": "48 to 72 hours" } },
+        { "id": "costume-3", "name": { "fr": "Costume trois pièces", "en": "Three-piece suit" }, "price": null, "delay": { "fr": "48 à 72 h", "en": "48 to 72 hours" } },
+        { "id": "veste", "name": { "fr": "Veste, blazer", "en": "Jacket, blazer" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } },
+        { "id": "pantalon", "name": { "fr": "Pantalon", "en": "Trousers" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } },
+        { "id": "cravate", "name": { "fr": "Cravate", "en": "Tie" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } }
+      ]
+    },
+    {
+      "id": "manteaux",
+      "name": { "fr": "Manteaux", "en": "Coats" },
+      "items": [
+        { "id": "manteau", "name": { "fr": "Manteau, caban", "en": "Coat, pea coat" }, "price": null, "delay": { "fr": "3 à 4 jours", "en": "3 to 4 days" } },
+        { "id": "manteau-long", "name": { "fr": "Manteau long, laine ou cachemire", "en": "Long coat, wool or cashmere" }, "price": null, "delay": { "fr": "3 à 4 jours", "en": "3 to 4 days" } },
+        { "id": "doudoune", "name": { "fr": "Doudoune", "en": "Down jacket" }, "price": null, "delay": { "fr": "4 à 5 jours", "en": "4 to 5 days" } },
+        { "id": "trench", "name": { "fr": "Imperméable, trench", "en": "Raincoat, trench coat" }, "price": null, "delay": { "fr": "3 à 4 jours", "en": "3 to 4 days" } }
+      ]
+    },
+    {
+      "id": "robes",
+      "name": { "fr": "Robes & robes de mariée", "en": "Dresses & wedding dresses" },
+      "items": [
+        { "id": "robe", "name": { "fr": "Robe simple", "en": "Day dress" }, "price": null, "delay": { "fr": "48 à 72 h", "en": "48 to 72 hours" } },
+        { "id": "robe-soiree", "name": { "fr": "Robe de soirée, robe longue", "en": "Evening or long dress" }, "price": null, "delay": { "fr": "3 à 5 jours", "en": "3 to 5 days" } },
+        { "id": "jupe", "name": { "fr": "Jupe", "en": "Skirt" }, "price": null, "delay": { "fr": "48 h", "en": "48 hours" } },
+        { "id": "robe-mariee", "name": { "fr": "Robe de mariée", "en": "Wedding dress" }, "price": null, "delay": { "fr": "1 à 2 semaines, sur devis", "en": "1 to 2 weeks, on quotation" } }
+      ]
+    },
+    {
+      "id": "cuir",
+      "name": { "fr": "Cuir & daim", "en": "Leather & suede" },
+      "items": [
+        { "id": "veste-cuir", "name": { "fr": "Veste ou blouson en cuir", "en": "Leather jacket" }, "price": null, "delay": null, "confirm": true },
+        { "id": "daim", "name": { "fr": "Pièce en daim, nubuck", "en": "Suede or nubuck piece" }, "price": null, "delay": null, "confirm": true },
+        { "id": "manteau-cuir", "name": { "fr": "Manteau en cuir, peau lainée", "en": "Leather or sheepskin coat" }, "price": null, "delay": null, "confirm": true }
+      ]
+    },
+    {
+      "id": "linge",
+      "name": { "fr": "Linge de maison & couettes", "en": "Household linen & duvets" },
+      "items": [
+        { "id": "couette-1", "name": { "fr": "Couette une personne", "en": "Single duvet" }, "price": null, "delay": { "fr": "3 à 5 jours", "en": "3 to 5 days" } },
+        { "id": "couette-2", "name": { "fr": "Couette deux personnes", "en": "Double duvet" }, "price": null, "delay": { "fr": "3 à 5 jours", "en": "3 to 5 days" } },
+        { "id": "couverture", "name": { "fr": "Couverture, plaid", "en": "Blanket, throw" }, "price": null, "delay": { "fr": "3 à 5 jours", "en": "3 to 5 days" } },
+        { "id": "nappe", "name": { "fr": "Nappe", "en": "Tablecloth" }, "price": null, "delay": { "fr": "48 à 72 h", "en": "48 to 72 hours" } },
+        { "id": "rideaux", "name": { "fr": "Rideaux, voilages", "en": "Curtains, sheers" }, "price": null, "delay": { "fr": "4 à 5 jours", "en": "4 to 5 days" } }
+      ]
+    },
+    {
+      "id": "detachage",
+      "name": { "fr": "Détachage", "en": "Stain removal" },
+      "items": [
+        { "id": "detachage", "name": { "fr": "Détachage localisé (vin, café, gras, maquillage…)", "en": "Spot stain removal (wine, coffee, grease, make-up…)" }, "price": null, "delay": { "fr": "Selon la tache, sur photo", "en": "Depends on the stain, quoted from a photo" } },
+        { "id": "repassage", "name": { "fr": "Repassage seul", "en": "Pressing only" }, "price": null, "delay": { "fr": "24 à 48 h", "en": "24 to 48 hours" } }
+      ]
+    }
+  ]
+}

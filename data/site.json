@@ -1,0 +1,20 @@
+{
+  "name": "Teinturerie des Jacobins",
+  "url": "https://teinturerie-des-jacobins.vercel.app",
+  "phone": "03 22 91 77 93",
+  "phoneIntl": "+33 3 22 91 77 93",
+  "tel": "+33322917793",
+  "whatsapp": null,
+  "email": null,
+  "address": { "street": "47 rue des Jacobins", "postalCode": "80000", "city": "Amiens", "district": "Centre-ville", "region": "Hauts-de-France", "country": "FR" },
+  "geo": { "lat": 49.8919, "lng": 2.2963 },
+  "maps": "https://www.google.com/maps/search/?api=1&query=Teinturerie+des+Jacobins+47+rue+des+Jacobins+80000+Amiens",
+  "mapsEmbed": "https://www.google.com/maps?q=Teinturerie+des+Jacobins,+47+rue+des+Jacobins,+80000+Amiens&z=16&output=embed",
+  "rating": { "value": 3.4, "count": 37, "asOf": "2026-11-10", "source": "Google" },
+  "legal": {
+    "company": null,
+    "siret": null,
+    "director": null,
+    "host": "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis"
+  }
+}

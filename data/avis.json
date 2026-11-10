@@ -1,0 +1,4 @@
+{
+  "_note": "À REMPLIR avec de vrais avis clients (par exemple des avis Google repris avec l'accord de leur auteur). Aucun avis n'a été inventé. Tant que la liste est vide, la section n'affiche que la note Google et le lien vers les avis. Format : { \"author\": \"Prénom N.\", \"date\": \"2026-10\", \"text\": { \"fr\": \"…\", \"en\": \"…\" }, \"source\": \"Google\" }",
+  "items": []
+}
