@@ -1,18 +1,19 @@
 {
-  "_note": "Emplacements photo du site. Chemin /media/<dossier>/<fichier>.jpg (préparé par npm run media depuis assets/), ou null : le site affiche alors un emplacement dessiné, sans fausse photo. Pour ajouter une photo prise sur place : la poser dans assets/<dossier>/, l'ajouter à scripts/media.mjs (PICKS), lancer npm run media, puis renseigner ici le chemin. Liste des photos à prendre : assets/A-PHOTOGRAPHIER.md.",
-  "hero": null,
-  "facade": null,
+  "_note": "Emplacements photo du site. Chemin /media/<dossier>/<fichier>.jpg (préparé par npm run media depuis assets/), ou null : le site affiche alors un emplacement dessiné, sans fausse photo. Pour ajouter une photo prise sur place : la poser dans assets/<dossier>/, l'ajouter à scripts/media.mjs (PICKS), lancer npm run media, puis renseigner ici le chemin. Liste des photos à prendre : assets/A-PHOTOGRAPHIER.md. Photos réelles : hero et facade (Google Maps). Les photos de /media/vetements/ sont des illustrations libres de droits (Unsplash) : voir PHOTOS-SOURCES.md.",
+  "hero": "/media/hero/devanture-teinturerie.jpg",
+  "facade": "/media/facade/facade-rue-des-jacobins.jpg",
   "boutique": null,
   "equipe": null,
-  "delicats": null,
-  "detachage": null,
-  "mariee": null,
+  "delicats": "/media/vetements/revers-veste-laine.jpg",
+  "detachage": "/media/vetements/gouttes-chemise-bleue.jpg",
+  "mariee": "/media/vetements/robe-mariee-bustier.jpg",
   "tiles": {
-    "chemises": null,
-    "costumes": null,
-    "manteaux": null,
-    "robes": null,
-    "cuir": null,
-    "linge": null
-  }
+    "chemises": "/media/vetements/chemises-cintre.jpg",
+    "costumes": "/media/vetements/costume-noir-cintre.jpg",
+    "manteaux": "/media/vetements/manteau-tweed-cintre.jpg",
+    "robes": "/media/vetements/robe-blanche-porte.jpg",
+    "cuir": "/media/vetements/veste-cuir-marron.jpg",
+    "linge": "/media/vetements/couette-blanche.jpg"
+  },
+  "marieePage": "/media/vetements/robe-mariee-dentelle.jpg"
 }

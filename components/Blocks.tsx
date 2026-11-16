@@ -23,11 +23,12 @@ export function Photo({ src, d, className = "", sizes, priority = false }: { src
  * Emplacement photo : la vraie photo si elle existe (data/photos.json), sinon un panneau gris perle
  * (ou bleu nuit) avec un filet laiton et le dessin du vêtement au trait. Jamais de fausse photo.
  */
-export function Slot({ src, d, sizes, className = "", icon, label, priority = false, dark = false, imgClass = "" }: { src: string | null; d: Dict; sizes: string; className?: string; icon?: ReactNode; label?: string; priority?: boolean; dark?: boolean; imgClass?: string }) {
+export function Slot({ src, d, sizes, className = "", icon, label, priority = false, dark = false, imgClass = "", note }: { src: string | null; d: Dict; sizes: string; className?: string; icon?: ReactNode; label?: string; priority?: boolean; dark?: boolean; imgClass?: string; note?: string }) {
   if (src)
     return (
-      <div className={`overflow-hidden bg-pearl ${className}`}>
+      <div className={`${/absolute/.test(className) ? "" : "relative"} overflow-hidden bg-pearl ${className}`}>
         <Photo src={src} d={d} sizes={sizes} priority={priority} className={`size-full object-cover ${imgClass}`} />
+        {note && <span className="absolute start-3 bottom-3 bg-paper/85 px-2 py-0.5 text-[0.6875rem] tracking-[0.06em] text-muted">{note}</span>}
       </div>
     );
   return (

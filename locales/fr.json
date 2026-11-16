@@ -31,7 +31,15 @@
     "today": "aujourd’hui",
     "tomorrow": "demain"
   },
-  "days": ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"],
+  "days": [
+    "dimanche",
+    "lundi",
+    "mardi",
+    "mercredi",
+    "jeudi",
+    "vendredi",
+    "samedi"
+  ],
   "hours": {
     "range": "Du {from} au {to}",
     "single": "Le {day}",
@@ -56,21 +64,51 @@
     "from": "à partir de {price}",
     "onQuote": "Tarif sur demande",
     "items": {
-      "chemises": { "title": "Chemises", "text": "Lavées, repassées, rendues sur cintre ou pliées. Chemisiers, pulls et gilets aussi." },
-      "costumes": { "title": "Costumes", "text": "Deux ou trois pièces, vestes, pantalons, cravates : nettoyés et repassés, prêts à porter." },
-      "manteaux": { "title": "Manteaux", "text": "Laine, cachemire, doudounes, trenchs : un nettoyage qui respecte la matière et la coupe." },
-      "robes": { "title": "Robes et robes de mariée", "text": "Robes du quotidien, de soirée, de cérémonie, et votre robe de mariée après le grand jour." },
-      "cuir": { "title": "Cuir et daim", "text": "Vestes, blousons et manteaux en cuir, daim ou nubuck. Prestation à confirmer au comptoir." },
-      "linge": { "title": "Linge de maison et couettes", "text": "Couettes, couvertures, plaids, nappes, rideaux : tout ce qui ne rentre pas dans votre machine." }
+      "chemises": {
+        "title": "Chemises",
+        "text": "Lavées, repassées, rendues sur cintre ou pliées. Chemisiers, pulls et gilets aussi."
+      },
+      "costumes": {
+        "title": "Costumes",
+        "text": "Deux ou trois pièces, vestes, pantalons, cravates : nettoyés et repassés, prêts à porter."
+      },
+      "manteaux": {
+        "title": "Manteaux",
+        "text": "Laine, cachemire, doudounes, trenchs : un nettoyage qui respecte la matière et la coupe."
+      },
+      "robes": {
+        "title": "Robes et robes de mariée",
+        "text": "Robes du quotidien, de soirée, de cérémonie, et votre robe de mariée après le grand jour."
+      },
+      "cuir": {
+        "title": "Cuir et daim",
+        "text": "Vestes, blousons et manteaux en cuir, daim ou nubuck. Prestation à confirmer au comptoir."
+      },
+      "linge": {
+        "title": "Linge de maison et couettes",
+        "text": "Couettes, couvertures, plaids, nappes, rideaux : tout ce qui ne rentre pas dans votre machine."
+      }
     }
   },
   "strip": {
     "label": "En bref",
     "items": [
-      { "title": "Prix affichés", "text": "Le tarif de chaque article, avant même de passer la porte." },
-      { "title": "Délais clairs", "text": "La date de retrait est notée sur votre ticket." },
-      { "title": "Détachage", "text": "Une tache tenace ? Envoyez-nous d’abord une photo." },
-      { "title": "Centre-ville", "text": "Rue des Jacobins, du lundi au samedi." }
+      {
+        "title": "Prix affichés",
+        "text": "Le tarif de chaque article, avant même de passer la porte."
+      },
+      {
+        "title": "Délais clairs",
+        "text": "La date de retrait est notée sur votre ticket."
+      },
+      {
+        "title": "Détachage",
+        "text": "Une tache tenace ? Envoyez-nous d’abord une photo."
+      },
+      {
+        "title": "Centre-ville",
+        "text": "Rue des Jacobins, du lundi au samedi."
+      }
     ]
   },
   "tarifs": {
@@ -83,7 +121,11 @@
       "Pour une pièce délicate ou une tache, un devis sur photo."
     ],
     "note": "Délais indicatifs, hors dimanches et jours fériés, selon l’affluence. Un prix qui n’est pas affiché vous est donné au comptoir ou par téléphone.",
-    "head": { "service": "Article", "price": "Prix indicatif", "delay": "Délai" },
+    "head": {
+      "service": "Article",
+      "price": "Prix indicatif",
+      "delay": "Délai"
+    },
     "from": "à partir de {price}",
     "onQuote": "sur demande",
     "confirm": "à confirmer",
@@ -140,12 +182,30 @@
     "eyebrow": "Questions fréquentes",
     "title": "Avant de passer",
     "items": [
-      { "q": "Quels sont vos horaires ?", "a": "Le pressing est ouvert du lundi au samedi, de 9 h à 19 h. Vous pouvez déposer et reprendre vos vêtements sans rendez-vous." },
-      { "q": "En combien de temps mes vêtements sont-ils prêts ?", "a": "Cela dépend de l’article : comptez en général 24 à 48 h pour une chemise, quelques jours pour un manteau ou une couette, et un délai sur devis pour une robe de mariée. Le tableau des tarifs donne le délai de chaque article, et la date de retrait est notée sur votre ticket." },
-      { "q": "Comment connaître le prix avant de déposer ?", "a": "Les prix de départ sont affichés dans le tableau des tarifs. Pour une pièce particulière ou une tache, envoyez 1 à 3 photos par le formulaire de devis, ou passez au comptoir : le prix vous est annoncé avant que l’on commence." },
-      { "q": "Toutes les taches partent-elles ?", "a": "La plupart, oui, surtout si elles sont récentes. Certaines taches anciennes ou certaines matières fragiles ne permettent pas un résultat parfait : on vous le dit avant, honnêtement. En attendant, ne frottez pas et ne repassez pas une tache, apportez le vêtement le plus tôt possible." },
-      { "q": "Comment puis-je payer ?", "a": "Le paiement se fait au retrait de vos vêtements, en espèces ou par carte bancaire." },
-      { "q": "Où se garer pour déposer mes vêtements ?", "a": "Le pressing est rue des Jacobins, en plein centre-ville. Le stationnement est payant dans la rue et les rues voisines, et plusieurs parkings du centre sont à quelques minutes à pied." }
+      {
+        "q": "Quels sont vos horaires ?",
+        "a": "Le pressing est ouvert le lundi de 14 h 30 à 19 h, et du mardi au samedi de 9 h à 19 h. Vous pouvez déposer et reprendre vos vêtements sans rendez-vous."
+      },
+      {
+        "q": "En combien de temps mes vêtements sont-ils prêts ?",
+        "a": "Cela dépend de l’article : comptez en général 24 à 48 h pour une chemise, quelques jours pour un manteau ou une couette, et un délai sur devis pour une robe de mariée. Le tableau des tarifs donne le délai de chaque article, et la date de retrait est notée sur votre ticket."
+      },
+      {
+        "q": "Comment connaître le prix avant de déposer ?",
+        "a": "Les prix de départ sont affichés dans le tableau des tarifs. Pour une pièce particulière ou une tache, envoyez 1 à 3 photos par le formulaire de devis, ou passez au comptoir : le prix vous est annoncé avant que l’on commence."
+      },
+      {
+        "q": "Toutes les taches partent-elles ?",
+        "a": "La plupart, oui, surtout si elles sont récentes. Certaines taches anciennes ou certaines matières fragiles ne permettent pas un résultat parfait : on vous le dit avant, honnêtement. En attendant, ne frottez pas et ne repassez pas une tache, apportez le vêtement le plus tôt possible."
+      },
+      {
+        "q": "Comment puis-je payer ?",
+        "a": "Le paiement se fait au retrait de vos vêtements, en espèces ou par carte bancaire."
+      },
+      {
+        "q": "Où se garer pour déposer mes vêtements ?",
+        "a": "Le pressing est rue des Jacobins, en plein centre-ville. Le stationnement est payant dans la rue et les rues voisines, et plusieurs parkings du centre sont à quelques minutes à pied."
+      }
     ]
   },
   "footer": {
@@ -157,7 +217,8 @@
     "logoTitle": "Teinturerie des Jacobins, pressing à Amiens"
   },
   "slots": {
-    "boutique": "La boutique"
+    "boutique": "La boutique",
+    "illustration": "Photo d’illustration"
   },
   "devis": {
     "metaTitle": "Demander un devis de pressing à Amiens | Teinturerie des Jacobins",
@@ -174,7 +235,16 @@
       "contact": "Vos coordonnées"
     },
     "fields": {
-      "objects": { "chemise": "Chemise", "costume": "Costume", "manteau": "Manteau, doudoune", "robe": "Robe", "mariee": "Robe de mariée", "cuir": "Cuir, daim", "linge": "Linge, couette", "autre": "Autre" },
+      "objects": {
+        "chemise": "Chemise",
+        "costume": "Costume",
+        "manteau": "Manteau, doudoune",
+        "robe": "Robe",
+        "mariee": "Robe de mariée",
+        "cuir": "Cuir, daim",
+        "linge": "Linge, couette",
+        "autre": "Autre"
+      },
       "repairsLabel": "Votre besoin",
       "repairsHint": "plusieurs choix possibles",
       "repair": "Décrivez la tache ou le besoin",
@@ -183,7 +253,12 @@
       "photosHint": "1 à 3 photos : le vêtement en entier, la tache de près, et l’étiquette d’entretien si possible.",
       "photoRemove": "Retirer la photo",
       "photosCount": "{count}/3",
-      "delays": { "pas-presse": "Pas pressé", "semaine": "Dans la semaine", "urgent": "Le plus vite possible", "date": "Pour une date précise :" },
+      "delays": {
+        "pas-presse": "Pas pressé",
+        "semaine": "Dans la semaine",
+        "urgent": "Le plus vite possible",
+        "date": "Pour une date précise :"
+      },
       "date": "Date souhaitée",
       "name": "Nom",
       "phone": "Téléphone",
@@ -238,23 +313,44 @@
   "pages": {
     "pressing": {
       "metaTitle": "Pressing à Amiens, centre-ville : chemises, costumes, manteaux | Teinturerie des Jacobins",
-      "metaDescription": "Pressing au centre-ville d’Amiens, 47 rue des Jacobins : nettoyage de chemises, costumes, manteaux, couettes, détachage. Prix et délais affichés, du lundi au samedi de 9 h à 19 h.",
+      "metaDescription": "Pressing au centre-ville d’Amiens, 47 rue des Jacobins : nettoyage de chemises, costumes, manteaux, couettes, détachage. Prix et délais affichés, du lundi au samedi.",
       "eyebrow": "Pressing · Centre-ville d’Amiens",
       "title": "Pressing à Amiens",
       "intro": "Une chemise pour lundi, un costume pour un mariage, le manteau d’hiver à rafraîchir : déposez-les rue des Jacobins, en plein centre-ville. Le prix et la date de retrait vous sont donnés au comptoir.",
       "cta": "Demander un devis",
       "listTitle": "Ce que nous nettoyons",
       "list": [
-        { "title": "Chemises et hauts", "text": "Lavées et repassées, rendues sur cintre ou pliées, chemisiers et pulls compris." },
-        { "title": "Costumes", "text": "Vestes, pantalons, costumes deux ou trois pièces, cravates." },
-        { "title": "Manteaux", "text": "Laine, cachemire, doudounes, imperméables et trenchs." },
-        { "title": "Linge de maison", "text": "Couettes, couvertures, plaids, nappes et rideaux." }
+        {
+          "title": "Chemises et hauts",
+          "text": "Lavées et repassées, rendues sur cintre ou pliées, chemisiers et pulls compris."
+        },
+        {
+          "title": "Costumes",
+          "text": "Vestes, pantalons, costumes deux ou trois pièces, cravates."
+        },
+        {
+          "title": "Manteaux",
+          "text": "Laine, cachemire, doudounes, imperméables et trenchs."
+        },
+        {
+          "title": "Linge de maison",
+          "text": "Couettes, couvertures, plaids, nappes et rideaux."
+        }
       ],
       "howTitle": "Comment ça se passe",
       "how": [
-        { "title": "Vous déposez au comptoir", "text": "On regarde le vêtement avec vous : la matière, l’étiquette d’entretien, une éventuelle tache." },
-        { "title": "Prix et date annoncés", "text": "Le tarif et la date de retrait sont notés sur votre ticket, sans surprise." },
-        { "title": "Vous le reprenez prêt à porter", "text": "Nettoyé, repassé, sur cintre et sous housse ou plié selon l’article." }
+        {
+          "title": "Vous déposez au comptoir",
+          "text": "On regarde le vêtement avec vous : la matière, l’étiquette d’entretien, une éventuelle tache."
+        },
+        {
+          "title": "Prix et date annoncés",
+          "text": "Le tarif et la date de retrait sont notés sur votre ticket, sans surprise."
+        },
+        {
+          "title": "Vous le reprenez prêt à porter",
+          "text": "Nettoyé, repassé, sur cintre et sous housse ou plié selon l’article."
+        }
       ],
       "related": "Une pièce particulière, en cuir, en daim ou une robe de soirée ? Envoyez une photo, le pressing vous répond avec un prix et un délai."
     },
@@ -267,16 +363,37 @@
       "cta": "Demander un devis",
       "listTitle": "Ce que nous prenons en charge",
       "list": [
-        { "title": "Le nettoyage", "text": "Selon le tissu : satin, tulle, mousseline, dentelle, crêpe." },
-        { "title": "Le détachage", "text": "Traîne, ourlet, taches de vin, de maquillage ou d’herbe." },
-        { "title": "Les détails fragiles", "text": "Broderies, perles, sequins et boutons sont vérifiés avant de commencer." },
-        { "title": "Les robes du cortège", "text": "Robes de soirée, de cérémonie, costumes des témoins." }
+        {
+          "title": "Le nettoyage",
+          "text": "Selon le tissu : satin, tulle, mousseline, dentelle, crêpe."
+        },
+        {
+          "title": "Le détachage",
+          "text": "Traîne, ourlet, taches de vin, de maquillage ou d’herbe."
+        },
+        {
+          "title": "Les détails fragiles",
+          "text": "Broderies, perles, sequins et boutons sont vérifiés avant de commencer."
+        },
+        {
+          "title": "Les robes du cortège",
+          "text": "Robes de soirée, de cérémonie, costumes des témoins."
+        }
       ],
       "howTitle": "Les bons réflexes",
       "how": [
-        { "title": "Apportez-la vite", "text": "Les taches de sucre ou de champagne, invisibles au début, jaunissent avec le temps. Mieux vaut ne pas attendre des mois." },
-        { "title": "Envoyez une photo", "text": "La robe en entier, les taches de près et l’étiquette : le pressing vous dit ce qui est possible." },
-        { "title": "Un devis avant le dépôt", "text": "Le prix et le délai vous sont donnés avant que vous ne confiiez la robe." }
+        {
+          "title": "Apportez-la vite",
+          "text": "Les taches de sucre ou de champagne, invisibles au début, jaunissent avec le temps. Mieux vaut ne pas attendre des mois."
+        },
+        {
+          "title": "Envoyez une photo",
+          "text": "La robe en entier, les taches de près et l’étiquette : le pressing vous dit ce qui est possible."
+        },
+        {
+          "title": "Un devis avant le dépôt",
+          "text": "Le prix et le délai vous sont donnés avant que vous ne confiiez la robe."
+        }
       ],
       "related": "Robe de cortège, costume du marié ou tenue de cérémonie : envoyez une photo avec le formulaire de devis, vous obtenez un prix et un délai."
     }
@@ -293,17 +410,28 @@
     "data": "Données personnelles",
     "dataText": "Les informations envoyées par le formulaire de devis (nom, téléphone, e-mail, photos, message) servent uniquement à répondre à votre demande. Elles sont transmises par e-mail au pressing et ne sont pas conservées sur le site. Vous pouvez demander leur suppression en appelant le pressing.",
     "photos": "Photos",
-    "photosText": "Les photos du site sont celles de la Teinturerie des Jacobins. Aucune image de banque d’images ni générée par intelligence artificielle.",
+    "photosText": "Photos de la devanture : contributions publiques Google Maps (Eric Cossin, novembre 2017). Photos de vêtements : illustrations libres de droits Unsplash (licence Unsplash), qui ne montrent pas le pressing. Aucune image générée par intelligence artificielle.",
     "cookies": "Cookies",
     "cookiesText": "Le site n’utilise aucun cookie publicitaire ni de mesure d’audience. Seuls votre choix de langue et la fermeture du bandeau sont mémorisés. La carte est fournie par Google Maps."
   },
   "alt": {
-    "facade-rue-des-jacobins": "La devanture de la Teinturerie des Jacobins, au 47 rue des Jacobins à Amiens",
+    "facade-rue-des-jacobins": "La vitrine de la Teinturerie des Jacobins, 47 rue des Jacobins à Amiens, vue depuis le trottoir",
     "comptoir": "Le comptoir de la Teinturerie des Jacobins, avec les vêtements prêts sur le portant",
     "portant-costumes": "Des costumes nettoyés, sous housse, sur le portant du pressing",
     "repassage-chemise": "Une chemise blanche sur la table de repassage du pressing",
     "detachage": "Le poste de détachage du pressing, avec une tache traitée sur un tissu clair",
     "robe-mariee": "Une robe de mariée nettoyée, sur son cintre, prête à être rendue",
-    "equipe": "L’équipe de la Teinturerie des Jacobins au comptoir"
+    "equipe": "L’équipe de la Teinturerie des Jacobins au comptoir",
+    "devanture-teinturerie": "La devanture bleue de la Teinturerie des Jacobins, avec son enseigne en lettres capitales, rue des Jacobins à Amiens",
+    "chemises-cintre": "Chemises blanches et bleu clair sur des cintres en bois (photo d’illustration)",
+    "costume-noir-cintre": "Veste de costume noire sur un cintre (photo d’illustration)",
+    "manteau-tweed-cintre": "Manteau en tweed gris suspendu à un cintre dans une penderie (photo d’illustration)",
+    "robe-blanche-porte": "Robe blanche sans manches suspendue devant une porte en bois (photo d’illustration)",
+    "veste-cuir-marron": "Veste en cuir marron accrochée à une patère en bois (photo d’illustration)",
+    "couette-blanche": "Couette et draps blancs sur un lit (photo d’illustration)",
+    "revers-veste-laine": "Revers d’une veste de costume en laine grise, avec une fleur à la boutonnière (photo d’illustration)",
+    "gouttes-chemise-bleue": "Gouttes de liquide sur une chemise bleue, en gros plan (photo d’illustration)",
+    "robe-mariee-bustier": "Robe de mariée bustier blanche suspendue à un cintre (photo d’illustration)",
+    "robe-mariee-dentelle": "Robe de mariée en dentelle blanche suspendue à un cintre (photo d’illustration)"
   }
 }

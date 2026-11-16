@@ -176,7 +176,7 @@ function Mariee({ lang, d }: { lang: Locale; d: Dict }) {
       p={p}
       cats={["robes"]}
       query="?o=mariee"
-      media={<Slot src={slot("mariee")} d={d} priority sizes="(min-width:768px) 45vw, 100vw" className="aspect-[4/5]" icon={<DressIcon className="size-20" />} label={d.blocks.mariee.slot} />}
+      media={<Slot src={slot("marieePage")} d={d} priority sizes="(min-width:768px) 45vw, 100vw" className="aspect-[4/5]" icon={<DressIcon className="size-20" />} label={d.blocks.mariee.slot} note={d.slots.illustration} />}
       extra={<p className="mt-12 max-w-2xl border-t border-line pt-6 text-muted">{p.related}</p>}
     />
   );

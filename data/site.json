@@ -7,7 +7,7 @@
   "whatsapp": null,
   "email": null,
   "address": { "street": "47 rue des Jacobins", "postalCode": "80000", "city": "Amiens", "district": "Centre-ville", "region": "Hauts-de-France", "country": "FR" },
-  "geo": { "lat": 49.8919, "lng": 2.2963 },
+  "geo": { "lat": 49.8917499, "lng": 2.2995095 },
   "maps": "https://www.google.com/maps/search/?api=1&query=Teinturerie+des+Jacobins+47+rue+des+Jacobins+80000+Amiens",
   "mapsEmbed": "https://www.google.com/maps?q=Teinturerie+des+Jacobins,+47+rue+des+Jacobins,+80000+Amiens&z=16&output=embed",
   "rating": { "value": 3.4, "count": 37, "asOf": "2026-11-10", "source": "Google" },

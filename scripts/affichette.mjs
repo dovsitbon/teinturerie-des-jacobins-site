@@ -74,13 +74,23 @@ center(url.replace(/^https?:\/\//, ""), sans, 8, y, MUTED);
 y -= 18;
 page.drawLine({ start: { x: W / 2 - 30, y }, end: { x: W / 2 + 30, y }, thickness: 0.8, color: BRASS });
 const days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
-const open = [1, 2, 3, 4, 5, 6, 0].filter((d) => horaires.week[d]?.length);
-const r = horaires.week[open[0]][0];
 const h = (t) => t.replace(/^0/, "").replace(":00", " h").replace(":", " h ");
+// Jours consécutifs aux mêmes horaires regroupés : « Lundi 14 h 30 – 19 h · Du mardi au samedi 9 h – 19 h »
+const groups = [];
+for (const d of [1, 2, 3, 4, 5, 6, 0]) {
+  const r = horaires.week[d];
+  if (!r?.length) continue;
+  const label = r.map(([a, b]) => `${h(a)} – ${h(b)}`).join(", ");
+  const last = groups[groups.length - 1];
+  if (last && last.label === label && (last.to + 1) % 7 === d) last.to = d;
+  else groups.push({ from: d, to: d, label });
+}
+const cap = (s) => s[0].toUpperCase() + s.slice(1);
+const hoursLine = groups.map((g) => (g.from === g.to ? `${cap(days[g.from])} ${g.label}` : `Du ${days[g.from]} au ${days[g.to]} ${g.label}`)).join("  ·  ");
 y -= 17;
 center(`${site.address.street}, ${site.address.postalCode} ${site.address.city}  ·  ${site.phone}`, sans, 8.5, y);
 y -= 13;
-center(`Du ${days[open[0]]} au ${days[open[open.length - 1]]}, ${h(r[0])} – ${h(r[1])}`, sans, 8.5, y);
+center(hoursLine, sans, 8.5, y);
 
 const file = path.join(ROOT, "public/affichette-teinturerie-des-jacobins-a5.pdf");
 await writeFile(file, await pdf.save());

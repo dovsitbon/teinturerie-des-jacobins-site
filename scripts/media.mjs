@@ -14,11 +14,20 @@ const DIRS = ["raw", "hero", "facade", "boutique", "vetements"];
 
 // [fichier source (depuis assets/), dossier, nom, recadrage { top, bottom, left, right } en pixels retirés]
 const PICKS = [
-  // Aucune photo pour l'instant. Exemples, une fois les photos prises sur place (voir assets/A-PHOTOGRAPHIER.md) :
-  // ["facade/devanture.jpg", "facade", "facade-rue-des-jacobins", {}],
-  // ["boutique/comptoir.jpg", "boutique", "comptoir", {}],
-  // ["vetements/costumes-sous-housse.jpg", "vetements", "portant-costumes", {}],
-  // ["vetements/robe-mariee.jpg", "vetements", "robe-mariee", {}],
+  // Photos réelles (Google Maps, contributeur Eric Cossin, nov. 2017) : la devanture bleue du 47 rue des Jacobins
+  ["raw/jacobins_03.jpg", "hero", "devanture-teinturerie", { bottom: 1250 }],
+  ["raw/jacobins_01.jpg", "facade", "facade-rue-des-jacobins", {}],
+  // Photos libres de droits (Unsplash, licence Unsplash) : illustrations des familles de vêtements, jamais présentées comme le pressing
+  ["vetements/chemises-cintre.jpg", "vetements", "chemises-cintre", {}],
+  ["vetements/costume-noir-cintre.jpg", "vetements", "costume-noir-cintre", {}],
+  ["vetements/manteau-tweed-cintre.jpg", "vetements", "manteau-tweed-cintre", {}],
+  ["vetements/robe-blanche-porte.jpg", "vetements", "robe-blanche-porte", {}],
+  ["vetements/veste-cuir-marron.jpg", "vetements", "veste-cuir-marron", {}],
+  ["vetements/couette-blanche.jpg", "vetements", "couette-blanche", {}],
+  ["vetements/revers-veste-laine.jpg", "vetements", "revers-veste-laine", {}],
+  ["vetements/gouttes-chemise-bleue.jpg", "vetements", "gouttes-chemise-bleue", {}],
+  ["vetements/robe-mariee-bustier.jpg", "vetements", "robe-mariee-bustier", {}],
+  ["vetements/robe-mariee-dentelle.jpg", "vetements", "robe-mariee-dentelle", {}],
 ];
 
 const sizes = {};
@@ -39,10 +48,10 @@ for (const dir of DIRS) await mkdir(path.join(ROOT, "assets", dir), { recursive:
 
 // Image de partage (Open Graph) 1200 × 630 : tant qu'il n'y a pas de photo de façade, une composition sobre
 // (bleu nuit, cintre et chemise au trait, nom en capitales). À remplacer par la façade quand elle existe.
-const OG_PHOTO = null; // ex. "assets/facade/facade-rue-des-jacobins.jpg"
+const OG_PHOTO = "assets/hero/devanture-teinturerie.jpg";
 const ogFile = path.join(ROOT, "public/og.jpg");
 if (OG_PHOTO) {
-  await sharp(path.join(ROOT, OG_PHOTO)).resize(1200, 630, { fit: "cover" }).jpeg({ quality: 82, mozjpeg: true }).toFile(ogFile);
+  await sharp(path.join(ROOT, OG_PHOTO)).resize(1200, 630, { fit: "cover", position: "top" }).jpeg({ quality: 82, mozjpeg: true }).toFile(ogFile);
 } else {
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <rect width="1200" height="630" fill="#1D2B44"/>

@@ -31,7 +31,15 @@
     "today": "today",
     "tomorrow": "tomorrow"
   },
-  "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+  "days": [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday"
+  ],
   "hours": {
     "range": "{from} to {to}",
     "single": "{day}",
@@ -56,21 +64,51 @@
     "from": "from {price}",
     "onQuote": "Price on request",
     "items": {
-      "chemises": { "title": "Shirts", "text": "Washed, pressed, returned on a hanger or folded. Blouses, jumpers and cardigans too." },
-      "costumes": { "title": "Suits", "text": "Two or three-piece suits, jackets, trousers, ties: cleaned and pressed, ready to wear." },
-      "manteaux": { "title": "Coats", "text": "Wool, cashmere, down jackets, trench coats: cleaning that respects the fabric and the cut." },
-      "robes": { "title": "Dresses & wedding dresses", "text": "Everyday, evening and occasion dresses, and your wedding dress after the big day." },
-      "cuir": { "title": "Leather & suede", "text": "Leather, suede or nubuck jackets and coats. Service to be confirmed in store." },
-      "linge": { "title": "Household linen & duvets", "text": "Duvets, blankets, throws, tablecloths, curtains: everything too big for your machine." }
+      "chemises": {
+        "title": "Shirts",
+        "text": "Washed, pressed, returned on a hanger or folded. Blouses, jumpers and cardigans too."
+      },
+      "costumes": {
+        "title": "Suits",
+        "text": "Two or three-piece suits, jackets, trousers, ties: cleaned and pressed, ready to wear."
+      },
+      "manteaux": {
+        "title": "Coats",
+        "text": "Wool, cashmere, down jackets, trench coats: cleaning that respects the fabric and the cut."
+      },
+      "robes": {
+        "title": "Dresses & wedding dresses",
+        "text": "Everyday, evening and occasion dresses, and your wedding dress after the big day."
+      },
+      "cuir": {
+        "title": "Leather & suede",
+        "text": "Leather, suede or nubuck jackets and coats. Service to be confirmed in store."
+      },
+      "linge": {
+        "title": "Household linen & duvets",
+        "text": "Duvets, blankets, throws, tablecloths, curtains: everything too big for your machine."
+      }
     }
   },
   "strip": {
     "label": "At a glance",
     "items": [
-      { "title": "Prices shown", "text": "The price of every item, before you even walk in." },
-      { "title": "Clear turnaround", "text": "Your ready date is written on your ticket." },
-      { "title": "Stain removal", "text": "A stubborn stain? Send us a photo first." },
-      { "title": "City centre", "text": "Rue des Jacobins, Monday to Saturday." }
+      {
+        "title": "Prices shown",
+        "text": "The price of every item, before you even walk in."
+      },
+      {
+        "title": "Clear turnaround",
+        "text": "Your ready date is written on your ticket."
+      },
+      {
+        "title": "Stain removal",
+        "text": "A stubborn stain? Send us a photo first."
+      },
+      {
+        "title": "City centre",
+        "text": "Rue des Jacobins, Monday to Saturday."
+      }
     ]
   },
   "tarifs": {
@@ -83,7 +121,11 @@
       "For a delicate piece or a stain, a quote from a photo."
     ],
     "note": "Turnaround times are a guide, excluding Sundays and public holidays, and depend on how busy we are. Any price not shown is given at the counter or over the phone.",
-    "head": { "service": "Item", "price": "Guide price", "delay": "Turnaround" },
+    "head": {
+      "service": "Item",
+      "price": "Guide price",
+      "delay": "Turnaround"
+    },
     "from": "from {price}",
     "onQuote": "on request",
     "confirm": "to be confirmed",
@@ -140,12 +182,30 @@
     "eyebrow": "Frequently asked questions",
     "title": "Before you come",
     "items": [
-      { "q": "What are your opening hours?", "a": "We are open Monday to Saturday, 9am to 7pm. You can drop off and collect without an appointment." },
-      { "q": "How long until my clothes are ready?", "a": "It depends on the item: usually 24 to 48 hours for a shirt, a few days for a coat or a duvet, and a quoted time for a wedding dress. The price list gives the turnaround for each item, and your ready date is written on your ticket." },
-      { "q": "How can I know the price before dropping off?", "a": "Starting prices are listed in the price table. For a particular piece or a stain, send 1 to 3 photos through the quote form, or come to the counter: you get the price before any work starts." },
-      { "q": "Do all stains come out?", "a": "Most do, especially fresh ones. Some old stains or fragile fabrics will not give a perfect result: we tell you honestly beforehand. In the meantime, don’t rub or iron a stain, and bring the garment in as soon as you can." },
-      { "q": "How can I pay?", "a": "You pay when you collect your clothes, in cash or by card." },
-      { "q": "Where can I park to drop off my clothes?", "a": "We are on rue des Jacobins, right in the city centre. There is paid parking on the street and nearby streets, and several city-centre car parks a few minutes’ walk away." }
+      {
+        "q": "What are your opening hours?",
+        "a": "We are open on Monday from 2:30pm to 7pm, and Tuesday to Saturday from 9am to 7pm. You can drop off and collect without an appointment."
+      },
+      {
+        "q": "How long until my clothes are ready?",
+        "a": "It depends on the item: usually 24 to 48 hours for a shirt, a few days for a coat or a duvet, and a quoted time for a wedding dress. The price list gives the turnaround for each item, and your ready date is written on your ticket."
+      },
+      {
+        "q": "How can I know the price before dropping off?",
+        "a": "Starting prices are listed in the price table. For a particular piece or a stain, send 1 to 3 photos through the quote form, or come to the counter: you get the price before any work starts."
+      },
+      {
+        "q": "Do all stains come out?",
+        "a": "Most do, especially fresh ones. Some old stains or fragile fabrics will not give a perfect result: we tell you honestly beforehand. In the meantime, don’t rub or iron a stain, and bring the garment in as soon as you can."
+      },
+      {
+        "q": "How can I pay?",
+        "a": "You pay when you collect your clothes, in cash or by card."
+      },
+      {
+        "q": "Where can I park to drop off my clothes?",
+        "a": "We are on rue des Jacobins, right in the city centre. There is paid parking on the street and nearby streets, and several city-centre car parks a few minutes’ walk away."
+      }
     ]
   },
   "footer": {
@@ -157,7 +217,8 @@
     "logoTitle": "Teinturerie des Jacobins, dry cleaner in Amiens"
   },
   "slots": {
-    "boutique": "The shop"
+    "boutique": "The shop",
+    "illustration": "Illustrative photo"
   },
   "devis": {
     "metaTitle": "Request a dry cleaning quote in Amiens | Teinturerie des Jacobins",
@@ -174,7 +235,16 @@
       "contact": "Your details"
     },
     "fields": {
-      "objects": { "chemise": "Shirt", "costume": "Suit", "manteau": "Coat, down jacket", "robe": "Dress", "mariee": "Wedding dress", "cuir": "Leather, suede", "linge": "Linen, duvet", "autre": "Other" },
+      "objects": {
+        "chemise": "Shirt",
+        "costume": "Suit",
+        "manteau": "Coat, down jacket",
+        "robe": "Dress",
+        "mariee": "Wedding dress",
+        "cuir": "Leather, suede",
+        "linge": "Linen, duvet",
+        "autre": "Other"
+      },
       "repairsLabel": "What you need",
       "repairsHint": "choose as many as you like",
       "repair": "Describe the stain or what you need",
@@ -183,7 +253,12 @@
       "photosHint": "1 to 3 photos: the whole garment, the stain up close, and the care label if possible.",
       "photoRemove": "Remove photo",
       "photosCount": "{count}/3",
-      "delays": { "pas-presse": "No rush", "semaine": "Within the week", "urgent": "As soon as possible", "date": "By a specific date:" },
+      "delays": {
+        "pas-presse": "No rush",
+        "semaine": "Within the week",
+        "urgent": "As soon as possible",
+        "date": "By a specific date:"
+      },
       "date": "Date needed",
       "name": "Name",
       "phone": "Phone",
@@ -238,23 +313,44 @@
   "pages": {
     "pressing": {
       "metaTitle": "Dry cleaner in Amiens city centre: shirts, suits, coats | Teinturerie des Jacobins",
-      "metaDescription": "Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday, 9am to 7pm.",
+      "metaDescription": "Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday.",
       "eyebrow": "Dry cleaning · Amiens city centre",
       "title": "Dry cleaner in Amiens",
       "intro": "A shirt for Monday, a suit for a wedding, the winter coat to freshen up: drop them off on rue des Jacobins, right in the city centre. You get the price and the ready date at the counter.",
       "cta": "Request a quote",
       "listTitle": "What we clean",
       "list": [
-        { "title": "Shirts and tops", "text": "Washed and pressed, returned on a hanger or folded, blouses and jumpers included." },
-        { "title": "Suits", "text": "Jackets, trousers, two or three-piece suits, ties." },
-        { "title": "Coats", "text": "Wool, cashmere, down jackets, raincoats and trench coats." },
-        { "title": "Household linen", "text": "Duvets, blankets, throws, tablecloths and curtains." }
+        {
+          "title": "Shirts and tops",
+          "text": "Washed and pressed, returned on a hanger or folded, blouses and jumpers included."
+        },
+        {
+          "title": "Suits",
+          "text": "Jackets, trousers, two or three-piece suits, ties."
+        },
+        {
+          "title": "Coats",
+          "text": "Wool, cashmere, down jackets, raincoats and trench coats."
+        },
+        {
+          "title": "Household linen",
+          "text": "Duvets, blankets, throws, tablecloths and curtains."
+        }
       ],
       "howTitle": "How it works",
       "how": [
-        { "title": "Drop off at the counter", "text": "We look at the garment with you: the fabric, the care label, any stain." },
-        { "title": "Price and date given", "text": "The price and your ready date are written on your ticket, no surprises." },
-        { "title": "Collect it ready to wear", "text": "Cleaned, pressed, on a hanger in a cover or folded, depending on the item." }
+        {
+          "title": "Drop off at the counter",
+          "text": "We look at the garment with you: the fabric, the care label, any stain."
+        },
+        {
+          "title": "Price and date given",
+          "text": "The price and your ready date are written on your ticket, no surprises."
+        },
+        {
+          "title": "Collect it ready to wear",
+          "text": "Cleaned, pressed, on a hanger in a cover or folded, depending on the item."
+        }
       ],
       "related": "A special piece, in leather or suede, or an evening dress? Send a photo and we will reply with a price and a turnaround time."
     },
@@ -267,16 +363,37 @@
       "cta": "Request a quote",
       "listTitle": "What we take care of",
       "list": [
-        { "title": "Cleaning", "text": "Suited to the fabric: satin, tulle, chiffon, lace, crêpe." },
-        { "title": "Stain removal", "text": "Train, hem, wine, make-up or grass stains." },
-        { "title": "Fragile details", "text": "Embroidery, beads, sequins and buttons are checked before we start." },
-        { "title": "Wedding party outfits", "text": "Bridesmaid and evening dresses, the best men’s suits." }
+        {
+          "title": "Cleaning",
+          "text": "Suited to the fabric: satin, tulle, chiffon, lace, crêpe."
+        },
+        {
+          "title": "Stain removal",
+          "text": "Train, hem, wine, make-up or grass stains."
+        },
+        {
+          "title": "Fragile details",
+          "text": "Embroidery, beads, sequins and buttons are checked before we start."
+        },
+        {
+          "title": "Wedding party outfits",
+          "text": "Bridesmaid and evening dresses, the best men’s suits."
+        }
       ],
       "howTitle": "Good habits",
       "how": [
-        { "title": "Bring it in soon", "text": "Sugar or champagne stains, invisible at first, turn yellow over time. Better not to wait for months." },
-        { "title": "Send a photo", "text": "The whole dress, the stains up close and the label: we tell you what can be done." },
-        { "title": "A quote before drop-off", "text": "You get the price and the turnaround time before you hand over the dress." }
+        {
+          "title": "Bring it in soon",
+          "text": "Sugar or champagne stains, invisible at first, turn yellow over time. Better not to wait for months."
+        },
+        {
+          "title": "Send a photo",
+          "text": "The whole dress, the stains up close and the label: we tell you what can be done."
+        },
+        {
+          "title": "A quote before drop-off",
+          "text": "You get the price and the turnaround time before you hand over the dress."
+        }
       ],
       "related": "Bridesmaid dress, groom’s suit or ceremony outfit: send a photo through the quote form and get a price and a turnaround time."
     }
@@ -293,17 +410,28 @@
     "data": "Personal data",
     "dataText": "The information sent through the quote form (name, phone, email, photos, message) is only used to reply to your request. It is emailed to the shop and not stored on the website. You can ask for it to be deleted by calling the shop.",
     "photos": "Photos",
-    "photosText": "The photos on this website are those of Teinturerie des Jacobins. No stock images and no AI-generated images.",
+    "photosText": "Shopfront photos: public Google Maps contributions (Eric Cossin, November 2017). Garment photos: royalty-free Unsplash illustrations (Unsplash License), which do not show the shop. No AI-generated images.",
     "cookies": "Cookies",
     "cookiesText": "This website uses no advertising or analytics cookies. Only your language choice and the closed banner are remembered. The map is provided by Google Maps."
   },
   "alt": {
-    "facade-rue-des-jacobins": "The shopfront of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens",
+    "facade-rue-des-jacobins": "The window of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens, seen from the pavement",
     "comptoir": "The counter at Teinturerie des Jacobins, with finished garments on the rail",
     "portant-costumes": "Cleaned suits in garment covers on the dry cleaner’s rail",
     "repassage-chemise": "A white shirt on the dry cleaner’s pressing table",
     "detachage": "The stain removal station, with a stain being treated on a light fabric",
     "robe-mariee": "A cleaned wedding dress on its hanger, ready to be collected",
-    "equipe": "The Teinturerie des Jacobins team at the counter"
+    "equipe": "The Teinturerie des Jacobins team at the counter",
+    "devanture-teinturerie": "The blue shopfront of Teinturerie des Jacobins, with its capital-letter sign, on rue des Jacobins in Amiens",
+    "chemises-cintre": "White and light blue shirts on wooden hangers (illustrative photo)",
+    "costume-noir-cintre": "Black suit jacket on a hanger (illustrative photo)",
+    "manteau-tweed-cintre": "Grey tweed coat hanging in a wardrobe (illustrative photo)",
+    "robe-blanche-porte": "Sleeveless white dress hanging in front of a wooden door (illustrative photo)",
+    "veste-cuir-marron": "Brown leather jacket on a wooden coat hook (illustrative photo)",
+    "couette-blanche": "White duvet and sheets on a bed (illustrative photo)",
+    "revers-veste-laine": "Lapel of a grey wool suit jacket with a buttonhole flower (illustrative photo)",
+    "gouttes-chemise-bleue": "Drops of liquid on a blue shirt, close up (illustrative photo)",
+    "robe-mariee-bustier": "White strapless wedding dress on a hanger (illustrative photo)",
+    "robe-mariee-dentelle": "White lace wedding dress on a hanger (illustrative photo)"
   }
 }

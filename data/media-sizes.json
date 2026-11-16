@@ -1,1 +1,50 @@
-{}
+{
+ "/media/hero/devanture-teinturerie.jpg": [
+  2400,
+  1950
+ ],
+ "/media/facade/facade-rue-des-jacobins.jpg": [
+  1050,
+  1400
+ ],
+ "/media/vetements/chemises-cintre.jpg": [
+  933,
+  1400
+ ],
+ "/media/vetements/costume-noir-cintre.jpg": [
+  933,
+  1400
+ ],
+ "/media/vetements/manteau-tweed-cintre.jpg": [
+  933,
+  1400
+ ],
+ "/media/vetements/robe-blanche-porte.jpg": [
+  882,
+  1400
+ ],
+ "/media/vetements/veste-cuir-marron.jpg": [
+  1050,
+  1400
+ ],
+ "/media/vetements/couette-blanche.jpg": [
+  1050,
+  1400
+ ],
+ "/media/vetements/revers-veste-laine.jpg": [
+  1400,
+  814
+ ],
+ "/media/vetements/gouttes-chemise-bleue.jpg": [
+  1120,
+  1400
+ ],
+ "/media/vetements/robe-mariee-bustier.jpg": [
+  935,
+  1400
+ ],
+ "/media/vetements/robe-mariee-dentelle.jpg": [
+  933,
+  1400
+ ]
+}

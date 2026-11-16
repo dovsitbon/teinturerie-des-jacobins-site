@@ -80,7 +80,7 @@ Voir aussi : [INFOS-A-DEMANDER.md](INFOS-A-DEMANDER.md) et [assets/A-PHOTOGRAPHI
 
 ## Horaires (`data/horaires.json`)
 
-- lundi : 09:00 – 19:00
+- lundi : 14:30 – 19:00
 - mardi : 09:00 – 19:00
 - mercredi : 09:00 – 19:00
 - jeudi : 09:00 – 19:00
@@ -269,7 +269,7 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 | `faq.eyebrow` | Questions fréquentes | Frequently asked questions | |
 | `faq.title` | Avant de passer | Before you come | |
 | `faq.items.0.q` | Quels sont vos horaires ? | What are your opening hours? | **à valider (horaires)** |
-| `faq.items.0.a` | Le pressing est ouvert du lundi au samedi, de 9 h à 19 h. Vous pouvez déposer et reprendre vos vêtements sans rendez-vous. | We are open Monday to Saturday, 9am to 7pm. You can drop off and collect without an appointment. | **à valider (horaires)** |
+| `faq.items.0.a` | Le pressing est ouvert le lundi de 14 h 30 à 19 h, et du mardi au samedi de 9 h à 19 h. Vous pouvez déposer et reprendre vos vêtements sans rendez-vous. | We are open on Monday from 2:30pm to 7pm, and Tuesday to Saturday from 9am to 7pm. You can drop off and collect without an appointment. | **à valider (horaires)** |
 | `faq.items.1.q` | En combien de temps mes vêtements sont-ils prêts ? | How long until my clothes are ready? | **à valider (délais)** |
 | `faq.items.1.a` | Cela dépend de l’article : comptez en général 24 à 48 h pour une chemise, quelques jours pour un manteau ou une couette, et un délai sur devis pour une robe de mariée. Le tableau des tarifs donne le délai de chaque article, et la date de retrait est notée sur votre ticket. | It depends on the item: usually 24 to 48 hours for a shirt, a few days for a coat or a duvet, and a quoted time for a wedding dress. The price list gives the turnaround for each item, and your ready date is written on your ticket. | **à valider (délais)** |
 | `faq.items.2.q` | Comment connaître le prix avant de déposer ? | How can I know the price before dropping off? | |
@@ -297,6 +297,7 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 | Clé | Français | English | |
 |---|---|---|---|
 | `slots.boutique` | La boutique | The shop | |
+| `slots.illustration` | Photo d’illustration | Illustrative photo | |
 
 ### devis
 
@@ -378,7 +379,7 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 | Clé | Français | English | |
 |---|---|---|---|
 | `pages.pressing.metaTitle` | Pressing à Amiens, centre-ville : chemises, costumes, manteaux | Teinturerie des Jacobins | Dry cleaner in Amiens city centre: shirts, suits, coats | Teinturerie des Jacobins | |
-| `pages.pressing.metaDescription` | Pressing au centre-ville d’Amiens, 47 rue des Jacobins : nettoyage de chemises, costumes, manteaux, couettes, détachage. Prix et délais affichés, du lundi au samedi de 9 h à 19 h. | Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday, 9am to 7pm. | |
+| `pages.pressing.metaDescription` | Pressing au centre-ville d’Amiens, 47 rue des Jacobins : nettoyage de chemises, costumes, manteaux, couettes, détachage. Prix et délais affichés, du lundi au samedi. | Dry cleaner in Amiens city centre, 47 rue des Jacobins: shirts, suits, coats, duvets, stain removal. Prices and turnaround shown upfront, Monday to Saturday. | |
 | `pages.pressing.eyebrow` | Pressing · Centre-ville d’Amiens | Dry cleaning · Amiens city centre | |
 | `pages.pressing.title` | Pressing à Amiens | Dry cleaner in Amiens | |
 | `pages.pressing.intro` | Une chemise pour lundi, un costume pour un mariage, le manteau d’hiver à rafraîchir : déposez-les rue des Jacobins, en plein centre-ville. Le prix et la date de retrait vous sont donnés au comptoir. | A shirt for Monday, a suit for a wedding, the winter coat to freshen up: drop them off on rue des Jacobins, right in the city centre. You get the price and the ready date at the counter. | |
@@ -439,7 +440,7 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 | `legal.data` | Données personnelles | Personal data | |
 | `legal.dataText` | Les informations envoyées par le formulaire de devis (nom, téléphone, e-mail, photos, message) servent uniquement à répondre à votre demande. Elles sont transmises par e-mail au pressing et ne sont pas conservées sur le site. Vous pouvez demander leur suppression en appelant le pressing. | The information sent through the quote form (name, phone, email, photos, message) is only used to reply to your request. It is emailed to the shop and not stored on the website. You can ask for it to be deleted by calling the shop. | |
 | `legal.photos` | Photos | Photos | |
-| `legal.photosText` | Les photos du site sont celles de la Teinturerie des Jacobins. Aucune image de banque d’images ni générée par intelligence artificielle. | The photos on this website are those of Teinturerie des Jacobins. No stock images and no AI-generated images. | |
+| `legal.photosText` | Photos de la devanture : contributions publiques Google Maps (Eric Cossin, novembre 2017). Photos de vêtements : illustrations libres de droits Unsplash (licence Unsplash), qui ne montrent pas le pressing. Aucune image générée par intelligence artificielle. | Shopfront photos: public Google Maps contributions (Eric Cossin, November 2017). Garment photos: royalty-free Unsplash illustrations (Unsplash License), which do not show the shop. No AI-generated images. | |
 | `legal.cookies` | Cookies | Cookies | |
 | `legal.cookiesText` | Le site n’utilise aucun cookie publicitaire ni de mesure d’audience. Seuls votre choix de langue et la fermeture du bandeau sont mémorisés. La carte est fournie par Google Maps. | This website uses no advertising or analytics cookies. Only your language choice and the closed banner are remembered. The map is provided by Google Maps. | |
 
@@ -447,10 +448,21 @@ Chaque ligne : clé, français, anglais. Les textes marqués **à valider** dema
 
 | Photo | Français | English |
 |---|---|---|
-| facade-rue-des-jacobins | La devanture de la Teinturerie des Jacobins, au 47 rue des Jacobins à Amiens | The shopfront of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens |
+| facade-rue-des-jacobins | La vitrine de la Teinturerie des Jacobins, 47 rue des Jacobins à Amiens, vue depuis le trottoir | The window of Teinturerie des Jacobins, 47 rue des Jacobins, Amiens, seen from the pavement |
 | comptoir | Le comptoir de la Teinturerie des Jacobins, avec les vêtements prêts sur le portant | The counter at Teinturerie des Jacobins, with finished garments on the rail |
 | portant-costumes | Des costumes nettoyés, sous housse, sur le portant du pressing | Cleaned suits in garment covers on the dry cleaner’s rail |
 | repassage-chemise | Une chemise blanche sur la table de repassage du pressing | A white shirt on the dry cleaner’s pressing table |
 | detachage | Le poste de détachage du pressing, avec une tache traitée sur un tissu clair | The stain removal station, with a stain being treated on a light fabric |
 | robe-mariee | Une robe de mariée nettoyée, sur son cintre, prête à être rendue | A cleaned wedding dress on its hanger, ready to be collected |
 | equipe | L’équipe de la Teinturerie des Jacobins au comptoir | The Teinturerie des Jacobins team at the counter |
+| devanture-teinturerie | La devanture bleue de la Teinturerie des Jacobins, avec son enseigne en lettres capitales, rue des Jacobins à Amiens | The blue shopfront of Teinturerie des Jacobins, with its capital-letter sign, on rue des Jacobins in Amiens |
+| chemises-cintre | Chemises blanches et bleu clair sur des cintres en bois (photo d’illustration) | White and light blue shirts on wooden hangers (illustrative photo) |
+| costume-noir-cintre | Veste de costume noire sur un cintre (photo d’illustration) | Black suit jacket on a hanger (illustrative photo) |
+| manteau-tweed-cintre | Manteau en tweed gris suspendu à un cintre dans une penderie (photo d’illustration) | Grey tweed coat hanging in a wardrobe (illustrative photo) |
+| robe-blanche-porte | Robe blanche sans manches suspendue devant une porte en bois (photo d’illustration) | Sleeveless white dress hanging in front of a wooden door (illustrative photo) |
+| veste-cuir-marron | Veste en cuir marron accrochée à une patère en bois (photo d’illustration) | Brown leather jacket on a wooden coat hook (illustrative photo) |
+| couette-blanche | Couette et draps blancs sur un lit (photo d’illustration) | White duvet and sheets on a bed (illustrative photo) |
+| revers-veste-laine | Revers d’une veste de costume en laine grise, avec une fleur à la boutonnière (photo d’illustration) | Lapel of a grey wool suit jacket with a buttonhole flower (illustrative photo) |
+| gouttes-chemise-bleue | Gouttes de liquide sur une chemise bleue, en gros plan (photo d’illustration) | Drops of liquid on a blue shirt, close up (illustrative photo) |
+| robe-mariee-bustier | Robe de mariée bustier blanche suspendue à un cintre (photo d’illustration) | White strapless wedding dress on a hanger (illustrative photo) |
+| robe-mariee-dentelle | Robe de mariée en dentelle blanche suspendue à un cintre (photo d’illustration) | White lace wedding dress on a hanger (illustrative photo) |

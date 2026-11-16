@@ -10,7 +10,7 @@ import { categories, firstDelay, fromPrice } from "@/lib/tarifs";
 import { money } from "@/lib/shop";
 import { intlLocale } from "@/lib/locales";
 import { faqJsonLd } from "@/lib/jsonld";
-import { Faq, InfosBlock, PhoneLink, Rating, SectionHead, Slot, Stars } from "@/components/Blocks";
+import { Faq, InfosBlock, PhoneLink, Photo, Rating, SectionHead, Slot, Stars } from "@/components/Blocks";
 import { OpenStatus } from "@/components/OpenStatus";
 import { Reveal } from "@/components/Reveal";
 import { HeroDrawing } from "@/components/HeroDrawing";
@@ -39,8 +39,10 @@ function Hero({ lang, d }: { lang: Locale; d: Dict }) {
     <section aria-labelledby="hero-title" className="relative isolate flex min-h-[calc(100svh-4.5rem)] flex-col overflow-hidden bg-ink text-paper lg:min-h-[calc(100svh-6rem)]">
       {photo ? (
         <>
-          <Slot src={photo} d={d} priority sizes="100vw" className="settle absolute inset-0 -z-20" />
-          <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgb(22_33_58/0.82),rgb(22_33_58/0.35)_70%)] rtl:bg-[linear-gradient(270deg,rgb(22_33_58/0.82),rgb(22_33_58/0.35)_70%)]" aria-hidden="true" />
+          <div className="settle absolute inset-0 -z-20 overflow-hidden">
+            <Photo src={photo} d={d} priority sizes="100vw" className="size-full object-cover object-[60%_30%]" />
+          </div>
+          <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgb(22_33_58/0.88),rgb(22_33_58/0.55)_55%,rgb(22_33_58/0.2))] rtl:bg-[linear-gradient(270deg,rgb(22_33_58/0.88),rgb(22_33_58/0.55)_55%,rgb(22_33_58/0.2))]" aria-hidden="true" />
         </>
       ) : (
         <HeroDrawing />
@@ -237,9 +239,9 @@ function Features({ lang, d }: { lang: Locale; d: Dict }) {
   const box = (src: string | null) => (src ? "aspect-[4/5] md:aspect-[5/6]" : "aspect-[4/3]");
   return (
     <div className="py-6 lg:py-10">
-      <Feature id="delicats" {...b.delicats} to={href(lang, "home", "tarifs")} media={<Slot src={slot("delicats")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("delicats"))} icon={<SuitIcon className="size-16" />} label={b.delicats.slot} />} />
-      <Feature id="detachage" {...b.detachage} to={`${href(lang, "devis")}?b=detachage`} flip media={<Slot src={slot("detachage")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("detachage"))} icon={<CameraIcon className="size-16" />} label={b.detachage.slot} dark />} />
-      <Feature id="mariee" {...b.mariee} to={`${href(lang, "devis")}?o=mariee`} media={<Slot src={slot("mariee")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("mariee"))} icon={<DressIcon className="size-16" />} label={b.mariee.slot} />} />
+      <Feature id="delicats" {...b.delicats} to={href(lang, "home", "tarifs")} media={<Slot src={slot("delicats")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("delicats"))} icon={<SuitIcon className="size-16" />} label={b.delicats.slot} note={d.slots.illustration} />} />
+      <Feature id="detachage" {...b.detachage} to={`${href(lang, "devis")}?b=detachage`} flip media={<Slot src={slot("detachage")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("detachage"))} icon={<CameraIcon className="size-16" />} label={b.detachage.slot} note={d.slots.illustration} dark />} />
+      <Feature id="mariee" {...b.mariee} to={`${href(lang, "devis")}?o=mariee`} media={<Slot src={slot("mariee")} d={d} sizes="(min-width:768px) 45vw, 100vw" className={box(slot("mariee"))} icon={<DressIcon className="size-16" />} label={b.mariee.slot} note={d.slots.illustration} />} />
     </div>
   );
 }

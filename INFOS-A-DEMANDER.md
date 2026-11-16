@@ -9,11 +9,11 @@ Le site est en ligne avec ce qu'on sait de façon sûre : nom, adresse (47 rue d
 3. **Les délais réels** par article (`delay` dans `data/tarifs.json`) : les valeurs actuelles sont des ordres de grandeur à confirmer. Fait-il de l'express (dans la journée) ?
 4. **Cuir et daim** : les traite-t-il sur place, les confie-t-il à un spécialiste, ou pas du tout ? (Marqué « à confirmer ».)
 5. **Robe de mariée** : nettoyage sur place ou sous-traité, délai, mise en boîte de conservation ?
-6. **Les horaires exacts** : le site affiche du lundi au samedi, 9 h – 19 h, sans coupure le midi (`data/horaires.json`), plus ses fermetures de l'année (congés, ponts) pour le bandeau (`data/annonces.json`).
+6. **Les horaires exacts** : le site reprend la fiche Google (lundi 14 h 30 – 19 h, du mardi au samedi 9 h – 19 h, dimanche fermé) dans `data/horaires.json`, plus ses fermetures de l'année (congés, ponts) pour le bandeau (`data/annonces.json`).
 7. **Un portable pour WhatsApp** : si oui, renseigner `whatsapp` dans `data/site.json` (format 336XXXXXXXX). Pratique pour envoyer la photo d'une tache.
 8. **L'e-mail du pressing** pour recevoir les demandes de devis : à mettre dans Vercel (`DEVIS_NOTIFY_EMAIL`) avec une clé Resend (`RESEND_API_KEY`, `RESEND_FROM`). Tant que ce n'est pas fait, le formulaire fonctionne mais invite le client à appeler.
 9. **Les moyens de paiement** (le site dit espèces et carte) et **le devis gratuit** (annoncé : à confirmer).
-10. **Des photos de la boutique** : façade, comptoir, portants, vêtements prêts, robe de mariée, détachage. Liste détaillée : `assets/A-PHOTOGRAPHIER.md`.
+10. **Des photos de la boutique** : la façade du site vient d'un contributeur Google Maps (2017) et les vêtements sont des photos Unsplash d'illustration (voir `PHOTOS-SOURCES.md`). Ses propres photos (façade actuelle, comptoir, portants, robe de mariée, détachage) les remplaceront. Liste : `assets/A-PHOTOGRAPHIER.md`. Lui demander aussi s'il a revendiqué sa fiche Google (elle ne l'est pas).
 11. **Le logo** : a-t-il une enseigne ou un logo dessiné ? Sinon, valider le logo typographique (cintre et goutte au trait).
 12. **SIRET, forme de la société, nom du responsable** pour les mentions légales (`data/site.json` → `legal`).
 13. **Accès et stationnement** : le texte actuel est général (stationnement payant, parkings du centre). Un parking précis à citer ?
